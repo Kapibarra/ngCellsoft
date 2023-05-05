@@ -7,12 +7,12 @@
   transform: translateX(-50%);
   transition: all 250ms ease-in-out;
   &.filled {
-    background: #5d5fef;
+    background: #eb8205;
     transition: all 250ms ease-in-out;
   }
   &.sticky {
     transition: all 250ms ease-in-out;
-    background: #5d5fef;
+    background: #eb8205;
     padding: 0px 10px;
     box-shadow: 0px 12px 36px rgba(28, 64, 97, 0.1),
       0px 4px 12px rgba(28, 64, 97, 0.3);
