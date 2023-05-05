@@ -6,8 +6,14 @@
     <img
       [@rotatedState]="!showBody ? 'default' : 'rotated'"
       class="accordion__icon"
-      src="assets/icons/accordion_icon.png"
+      src="assets/icons/open-icon.png"
     />
+    <!-- <img
+      *ngIf="showBody"
+      [@rotatedState]="!showBody ? 'default' : 'rotated'"
+      class="accordion__icon"
+      src="assets/icons/close-icon.png"
+    /> -->
   </div>
 </div>
 <div class="acc-body" [@smoothCollapse]="!showBody ? 'initial' : 'final'">
