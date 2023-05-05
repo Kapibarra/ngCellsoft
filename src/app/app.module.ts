@@ -13,6 +13,10 @@ import { CtaComponent } from './shared/components/cta/cta.component';
 import { BuyComponent } from './shared/components/buy/buy.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { FormComponent } from './shared/components/form/form.component';
+import { MenuComponent } from './shared/components/menu/menu.component';
+import { ButtonPrimaryComponent } from './shared/components/button-primary/button-primary.component';
+import { BurgerComponent } from './shared/components/burger/burger.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { FormComponent } from './shared/components/form/form.component';
     CtaComponent,
     BuyComponent,
     FooterComponent,
-    FormComponent
+    FormComponent,
+    MenuComponent,
+    ButtonPrimaryComponent,
+    BurgerComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

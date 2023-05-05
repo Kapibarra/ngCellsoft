@@ -1,0 +1,193 @@
+@import "variables";
+.burger-menu {
+  width: 100%;
+  max-width: 280px;
+  height: $burgerWidth;
+  margin-right: 24px;
+  // margin-top: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  & .burger-container {
+    position: relative;
+    .burger-inner {
+      position: absolute;
+      width: $burgerWidth - 2 * $burgerBarHeight;
+      z-index: 10;
+      color: $iris;
+      left: 0px;
+      top: 0px;
+      border: $burgerBarHeight solid $burgerBarColor;
+      transition: border-color 0.2s ease-in 0.2s;
+      &::before {
+        position: absolute;
+        content: "";
+        top: -8px;
+        left: -$burgerBarHeight;
+        width: $burgerWidth - 2 * $burgerBarHeight;
+        border: $burgerBarHeight solid $burgerBarColor;
+        transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        left: -$burgerBarHeight;
+        width: $burgerWidth - 2 * $burgerBarHeight;
+        border: $burgerBarHeight solid $burgerBarColor;
+        transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
+      }
+    }
+  }
+  &.active .burger-container .burger-inner {
+    border-color: transparent;
+    transition: border-color ease-in 0.1s;
+  }
+  &.active .burger-container .burger-inner::before {
+    top: -$burgerBarHeight;
+    transform: rotate(-45deg);
+    transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
+  }
+  &.active .burger-container .burger-inner::after {
+    top: -$burgerBarHeight;
+    transform: rotate(45deg);
+    transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
+  }
+  & .overlay {
+    position: fixed;
+    z-index: -9;
+    top: 0;
+    background: rgba(255, 255, 255, 0);
+    height: 100vh;
+    width: 100%;
+    right: -414px;
+    overflow: hidden;
+    transition: all 550ms ease-in-out;
+    & .burger__nav {
+      transition: width 250ms ease-in-out;
+      opacity: 0;
+      -webkit-transition: width 250ms ease-in-out;
+      -moz-transition: width 250ms ease-in-out;
+      -ms-transition: width 250ms ease-in-out;
+      -o-transition: width 250ms ease-in-out;
+    }
+  }
+}
+
+.burger-menu-btn {
+  color: #fff;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.burger-menu.active {
+  & .overlay {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background: rgba($iris, 0.98);
+    height: 100vh;
+    width: 100%;
+    max-width: 414px;
+    & .burger__nav {
+      transition: width 250ms ease-in-out;
+      opacity: 1;
+      display: flex;
+      list-style: none;
+      padding-inline-start: 0px;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      margin-top: 20%;
+      gap: 10px;
+      box-sizing: border-box;
+      & li {
+        color: $white;
+      }
+      & li a {
+        font-size: 32px;
+        // & .nav__item-inner:before {
+        //     content: attr(data-text);
+        //     overflow: hidden;
+        //     width: 0%;
+        //     position: absolute;
+        //     left: 0;
+        //     top: 50%;
+        //     white-space: nowrap;
+        //     color: $white;
+        //     background-color: #f5f5f5;
+        //     z-index: 2;
+        //     transform: translateY(-50%);
+        //     transition: 1s cubic-bezier(.225, 1, .316, .99);
+        // }
+        // &:hover .nav__item-inner:before {
+        //     width: 100%;
+        //     content: attr(data-text);
+        //     overflow: hidden;
+        //     width: 0%;
+        //     position: absolute;
+        //     left: 0;
+        //     top: 50%;
+        //     white-space: nowrap;
+        //     color: $white;
+        //     background-color: #f5f5f5;
+        //     z-index: 2;
+        //     transform: translateY(-50%);
+        //     transition: 1s cubic-bezier(.225, 1, .316, .99);
+        // }
+      }
+    }
+  }
+}
+
+.burger__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30%;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.burger__copyright {
+  text-align: center;
+  margin-top: 30%;
+  & a {
+    color: $white;
+    text-decoration: unset;
+  }
+  color: $white;
+}
+
+.burger-menu.active {
+  .burger__logo {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+    margin-top: 30%;
+  }
+  .burger__nav-contacts {
+    opacity: 1;
+  }
+}
+
+.burger__nav-contacts {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 10%;
+  & a {
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: $white;
+  }
+}

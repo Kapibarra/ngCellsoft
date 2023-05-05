@@ -1,0 +1,23 @@
+<div class="burger-menu" [class.active]="active" (click)="onBurgerClicked()">
+  <div class="burger-container">
+    <div class="burger-inner"></div>
+  </div>
+  <div class="overlay">
+    <div class="burger__logo"><img src="assets/image/mainlogo.svg" /></div>
+    <div class="burger__nav-contacts">
+      <a href="tel:+79998391820" class="burger__nav-phone"
+        >+ 7 (999) 839-18-20</a
+      >
+      <p class="burger__nav-time">Ежедневно с 10:00 до 22:00</p>
+    </div>
+
+    <ul class="burger__nav">
+      <li *ngFor="let route of currentRoutes">
+        {{ route.data!["navLabel"] }}
+      </li>
+    </ul>
+    <div class="burger__copyright">
+      © <a href="https://madstack.ru"><span>MadStack</span> Digital Agency</a>
+    </div>
+  </div>
+</div>
