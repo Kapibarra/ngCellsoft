@@ -17,6 +17,9 @@ import { MenuComponent } from './shared/components/menu/menu.component';
 import { ButtonPrimaryComponent } from './shared/components/button-primary/button-primary.component';
 import { BurgerComponent } from './shared/components/burger/burger.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { FeaturesComponent } from './shared/components/features/features.component';
+import { FeaturesItemComponent } from './shared/components/features/features-item/features-item.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,13 +37,12 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     MenuComponent,
     ButtonPrimaryComponent,
     BurgerComponent,
-    HomepageComponent
+    HomepageComponent,
+    FeaturesComponent,
+    FeaturesItemComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

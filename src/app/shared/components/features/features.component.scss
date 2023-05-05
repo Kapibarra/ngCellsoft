@@ -1,0 +1,35 @@
+.features__wrapper {
+  & .features {
+    & .features__title {
+      /* Display md/Semibold */
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      /* identical to box height, or 122% */
+
+      text-align: center;
+      letter-spacing: -0.02em;
+
+      color: #101828;
+      margin-bottom: 20px;
+    }
+    & .features__subtitle {
+      /* Text xl/Normal */
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height, or 150% */
+
+      text-align: center;
+
+      color: #667085;
+      margin-bottom: 60px;
+    }
+  }
+}

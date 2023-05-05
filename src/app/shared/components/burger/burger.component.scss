@@ -1,8 +1,7 @@
-@import "variables";
 .burger-menu {
   width: 100%;
   max-width: 280px;
-  height: $burgerWidth;
+  height: 24px;
   margin-right: 24px;
   // margin-top: 8px;
   box-sizing: border-box;
@@ -13,29 +12,29 @@
     position: relative;
     .burger-inner {
       position: absolute;
-      width: $burgerWidth - 2 * $burgerBarHeight;
+      width: 24px - 2 * 1px;
       z-index: 10;
-      color: $iris;
+      color: #eb8205;
       left: 0px;
       top: 0px;
-      border: $burgerBarHeight solid $burgerBarColor;
+      border: 1px solid #fff;
       transition: border-color 0.2s ease-in 0.2s;
       &::before {
         position: absolute;
         content: "";
         top: -8px;
-        left: -$burgerBarHeight;
-        width: $burgerWidth - 2 * $burgerBarHeight;
-        border: $burgerBarHeight solid $burgerBarColor;
+        left: -1px;
+        width: 24px - 2 * 1px;
+        border: 1px solid #fff;
         transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
       }
       &::after {
         position: absolute;
         content: "";
         top: 6px;
-        left: -$burgerBarHeight;
-        width: $burgerWidth - 2 * $burgerBarHeight;
-        border: $burgerBarHeight solid $burgerBarColor;
+        left: -1px;
+        width: 24px - 2 * 1px;
+        border: 1px solid #fff;
         transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
       }
     }
@@ -45,12 +44,12 @@
     transition: border-color ease-in 0.1s;
   }
   &.active .burger-container .burger-inner::before {
-    top: -$burgerBarHeight;
+    top: -1px;
     transform: rotate(-45deg);
     transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
   }
   &.active .burger-container .burger-inner::after {
-    top: -$burgerBarHeight;
+    top: -1px;
     transform: rotate(45deg);
     transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
   }
@@ -89,7 +88,7 @@
     z-index: 9;
     top: 0;
     right: 0;
-    background: rgba($iris, 0.98);
+    background: rgba(#eb8205, 0.98);
     height: 100vh;
     width: 100%;
     max-width: 414px;
@@ -108,7 +107,7 @@
       gap: 10px;
       box-sizing: border-box;
       & li {
-        color: $white;
+        color: #fff;
       }
       & li a {
         font-size: 32px;
@@ -159,10 +158,10 @@
   text-align: center;
   margin-top: 30%;
   & a {
-    color: $white;
+    color: #fff;
     text-decoration: unset;
   }
-  color: $white;
+  color: #fff;
 }
 
 .burger-menu.active {
@@ -188,6 +187,6 @@
     font-size: 18px;
     letter-spacing: 2px;
     margin-bottom: 5px;
-    color: $white;
+    color: #fff;
   }
 }

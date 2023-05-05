@@ -1,0 +1,36 @@
+.acc-header {
+  border-top: 1px solid #d5d5d5;
+  min-height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 0px;
+}
+
+.header__title {
+  width: 100%;
+  /* Text lg/Medium */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  color: #101828;
+}
+
+.body {
+  display: flex;
+  padding-bottom: 25px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  color: #667085;
+}
