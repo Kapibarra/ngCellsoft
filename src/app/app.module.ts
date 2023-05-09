@@ -22,6 +22,7 @@ import { FeaturesItemComponent } from './shared/components/features/features-ite
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SupportComponent } from './shared/components/support/support.component';
 import { PartnerspageComponent } from './pages/partnerspage/partnerspage.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,8 +46,8 @@ import { PartnerspageComponent } from './pages/partnerspage/partnerspage.compone
     SupportComponent,
     PartnerspageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

@@ -1,1 +1,15 @@
-<p>partnerspage works!</p>
+<div class="partners__wrapper">
+    <div class="partners">
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" name="username" [(ngModel)]="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" [(ngModel)]="password" required>
+
+            <button type="submit">Войти</button>
+        </form>
+        <p *ngIf="showErrorMessage">{{ errorMessage }}</p>
+    </div>
+
+</div>
