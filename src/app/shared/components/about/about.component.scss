@@ -6,15 +6,18 @@
   padding-right: 10px;
   box-sizing: border-box;
   margin-top: 120px;
+
   & .about {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+
     & .about__content {
       width: 100%;
       max-width: 437px;
+
       & .about__title {
         /* PJ/Bold/42px */
 
@@ -29,6 +32,7 @@
 
         color: #18181b;
       }
+
       & .about__subtitle {
         margin-top: 20px;
         /* PJ/Regular/16px */
@@ -46,24 +50,25 @@
         max-width: 430px;
         margin-bottom: 20px;
       }
+
       & .about__button-wrapper {
         position: relative;
+
         & .about__button-bg {
           position: relative;
           width: 168px;
           top: 45px;
           left: 15px;
           height: 39px;
-          background: linear-gradient(
-            90deg,
-            #44bcff -0.55%,
-            #44b0ff 22.86%,
-            #ff44ec 48.36%,
-            #ff44ec 73.33%,
-            #ff675e 99.34%
-          );
+          background: linear-gradient(90deg,
+              #44bcff -0.55%,
+              #44b0ff 22.86%,
+              #ff44ec 48.36%,
+              #ff44ec 73.33%,
+              #ff675e 99.34%);
           filter: blur(35px);
         }
+
         & .about__button {
           /* gray/900 */
           color: #fff;
@@ -92,28 +97,33 @@
           text-align: right;
 
           color: #ffffff;
+          border-width: 2px;
+          border-style: none !important;
+          border-color: none !important;
+          border-image: none !important;
+
           &:hover {
             cursor: pointer;
           }
         }
       }
     }
+
     & .about__keys-content-container {
       position: relative;
       min-height: 367px;
+
       & .about__keys-bg {
         position: relative;
         width: 532px;
         height: 312px;
 
-        background: linear-gradient(
-          90deg,
-          #44ff9a -0.55%,
-          #44b0ff 22.86%,
-          #8b44ff 48.36%,
-          #ff6644 73.33%,
-          #ebff70 99.34%
-        );
+        background: linear-gradient(90deg,
+            #44ff9a -0.55%,
+            #44b0ff 22.86%,
+            #8b44ff 48.36%,
+            #ff6644 73.33%,
+            #ebff70 99.34%);
         filter: blur(35px);
       }
     }

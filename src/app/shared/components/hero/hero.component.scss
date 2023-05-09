@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 70vh;
+
   & .hero {
     width: 100%;
     max-width: 1340px;
@@ -12,6 +13,7 @@
     box-sizing: border-box;
     padding-top: 250px;
     padding-bottom: 180px;
+
     & .hero__title {
       font-family: "Inter";
       font-style: normal;
@@ -26,6 +28,7 @@
 
       color: #ffffff;
     }
+
     & .hero__description {
       width: 100%;
       max-width: 657px;
@@ -38,7 +41,7 @@
       font-size: 21px;
       line-height: 34px;
       /* or 162% */
-
+      margin-bottom: 30px;
       color: #e4e4e7;
     }
   }

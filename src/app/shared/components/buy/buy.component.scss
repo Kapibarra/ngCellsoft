@@ -1,0 +1,150 @@
+.buy__wrapper {
+    & .buy {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 20px;
+
+        & .buy__content {
+            width: 100%;
+            max-width: 476px;
+            margin-top: 250px;
+
+            & .buy__content-title {
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 64px;
+                color: #18181B;
+                margin-bottom: 25px;
+            }
+
+            & .buy__content-subtitle {
+                /* Inter/Regular/16px */
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                /* or 162% */
+
+
+                /* gray/600 */
+
+                color: #52525B;
+                margin-bottom: 30px;
+            }
+
+            & .buy__content-request {
+                box-sizing: border-box;
+
+                /* Auto layout */
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 17px 16px 17px 25px;
+                gap: 13px;
+
+                width: 476px;
+                height: 72px;
+
+                /* gray/50 */
+
+                background: #FAFAFA;
+                /* gray/400 */
+
+                border: 1px solid #A1A1AA;
+                border-radius: 15px;
+
+                & .buy__button-wrapper {
+                    position: relative;
+                    top: -19px;
+                }
+
+                & .content__request-text {
+                    /* PJ/Regular/16px */
+
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    /* identical to box height, or 162% */
+
+                    display: flex;
+                    align-items: center;
+
+                    /* gray/900 */
+
+                    color: #18181B;
+                }
+
+                & .buy__button-bg {
+                    position: relative;
+                    width: 168px;
+                    top: 40px;
+                    left: 15px;
+                    height: 39px;
+                    background: linear-gradient(90deg,
+                            #44bcff -0.55%,
+                            #44b0ff 22.86%,
+                            #ff44ec 48.36%,
+                            #ff44ec 73.33%,
+                            #ff675e 99.34%);
+                    filter: blur(35px);
+                }
+
+                & .buy__button {
+                    /* gray/900 */
+                    color: #fff;
+                    background: #18181b;
+                    border-radius: 10px;
+                    /* Auto layout */
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px;
+                    gap: 10px;
+                    width: 190px;
+                    height: 56px;
+                    filter: blur(0px) !important;
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    /* identical to box height, or 133% */
+
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+
+                    color: #ffffff;
+                    border-width: 2px;
+                    border-style: none !important;
+                    border-color: none !important;
+                    border-image: none !important;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        & .buy__image {
+            width: 100%;
+            max-width: 700px;
+        }
+    }
+}
