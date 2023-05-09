@@ -23,6 +23,11 @@
   text-align: center;
 
   color: #ffffff;
+  border-width: 2px;
+  border-style: none !important;
+  border-color: none !important;
+  border-image: none !important;
+
   &:hover {
     cursor: pointer;
   }

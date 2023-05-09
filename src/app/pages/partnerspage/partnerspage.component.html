@@ -1,15 +1,17 @@
 <div class="partners__wrapper">
     <div class="partners">
-        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+
+        <div class="partners__title">Переход на партнерский сайт</div>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" class="partners__form">
             <label for="username">Логин:</label>
             <input type="text" id="username" name="username" [(ngModel)]="username" required>
 
             <label for="password">Пароль:</label>
             <input type="password" id="password" name="password" [(ngModel)]="password" required>
 
-            <button type="submit">Войти</button>
+            <button type="submit" class="form__button">Войти</button>
         </form>
-        <p *ngIf="showErrorMessage">{{ errorMessage }}</p>
+        <p *ngIf="showErrorMessage" class="form__error-message">{{ errorMessage }}</p>
     </div>
 
 </div>
