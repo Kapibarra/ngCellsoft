@@ -5,16 +5,37 @@
       Вступление - пара предложений (будет готово в течение 1-2 дней).
     </div>
     <div class="accordion__module">
-      <app-features-item title="Функциональные возможности"
-        ><div class="block">hello</div></app-features-item
-      >
-      <app-features-item title="Режимы работы">test </app-features-item>
-      <app-features-item title="Материалы">test </app-features-item>
-      <app-features-item title="Производительность и масштабирование"
-        >test</app-features-item
-      >
-      <app-features-item title="Безопасность">test</app-features-item>
-      <app-features-item title="Совместимость">test </app-features-item>
+      <app-features-item *ngFor="let item of features" title="{{ item.title }}">
+        <div
+          class="features__item"
+          *ngFor="let itemFeatures of item.keys"
+          (click)="itemFeatures.activeDialog = !itemFeatures.activeDialog"
+        >
+          <div class="features__item-title">
+            {{ itemFeatures.name }}
+          </div>
+          <div
+            class="features__dialog"
+            [class.active]="itemFeatures.activeDialog"
+            (click)="$event.stopPropagation()"
+          >
+            <div class="features__dialog-button">
+              <img
+                src="assets/icons/open-icon.png"
+                (click)="itemFeatures.activeDialog = false"
+              />
+            </div>
+            <img
+              class="features__dialog-description"
+              [src]="itemFeatures.image"
+            />
+            <div
+              class="features__dialog-overlay"
+              (click)="itemFeatures.activeDialog = false"
+            ></div>
+          </div>
+        </div>
+      </app-features-item>
     </div>
   </div>
 </div>

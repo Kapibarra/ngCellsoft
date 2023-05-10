@@ -25,6 +25,8 @@
 .body {
   display: flex;
   padding-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 10px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
