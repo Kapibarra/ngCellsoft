@@ -37,7 +37,7 @@ export class FormComponent implements OnInit {
         '',
         [Validators.required, Validators.email, this.customEmailValidator],
       ],
-      phone: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
+      phone: ['', [Validators.required]],
       inn: [
         '',
         [Validators.required, Validators.pattern('^[0-9]{10}$|^[0-9]{12}$')],

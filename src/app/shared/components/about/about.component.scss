@@ -60,12 +60,14 @@
           top: 45px;
           left: 15px;
           height: 39px;
-          background: linear-gradient(90deg,
-              #44bcff -0.55%,
-              #44b0ff 22.86%,
-              #ff44ec 48.36%,
-              #ff44ec 73.33%,
-              #ff675e 99.34%);
+          background: linear-gradient(
+            90deg,
+            #44bcff -0.55%,
+            #44b0ff 22.86%,
+            #ff44ec 48.36%,
+            #ff44ec 73.33%,
+            #ff675e 99.34%
+          );
           filter: blur(35px);
         }
 
@@ -115,15 +117,18 @@
 
       & .about__keys-bg {
         position: relative;
-        width: 532px;
+        width: 400px;
+        max-width: 512px;
         height: 312px;
 
-        background: linear-gradient(90deg,
-            #44ff9a -0.55%,
-            #44b0ff 22.86%,
-            #8b44ff 48.36%,
-            #ff6644 73.33%,
-            #ebff70 99.34%);
+        background: linear-gradient(
+          90deg,
+          #44ff9a -0.55%,
+          #44b0ff 22.86%,
+          #8b44ff 48.36%,
+          #ff6644 73.33%,
+          #ebff70 99.34%
+        );
         filter: blur(35px);
       }
     }

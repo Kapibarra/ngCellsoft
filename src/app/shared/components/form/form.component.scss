@@ -6,6 +6,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   & .form__image {
+    width: 100%;
+    max-width: 720px;
+    & img {
+      width: 100%;
+      max-width: 720px;
+    }
   }
   & .contact-form {
     width: 100%;
@@ -48,5 +54,145 @@
         color: #eb8205;
       }
     }
+    & .contact-form-button {
+      width: 213px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 24px;
+      gap: 10px;
+      background: #eb8205;
+      border-radius: 8px;
+      /* Semi-bold/18px */
+
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      /* identical to box height, or 156% */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #ffffff;
+      border-width: 2px;
+      border-style: none !important;
+      border-color: none !important;
+      border-image: none !important;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    & .btn-disabled {
+      opacity: 0.5;
+      cursor: not-allowed !important;
+    }
+    & .contact-form-item {
+      margin-bottom: 24px;
+      & .contact-form-checkboxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+        width: 100%;
+        max-width: 512px;
+        & span {
+          /* Text md/Medium */
+
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height, or 150% */
+
+          /* Gray/700 */
+
+          color: #344054;
+          margin-left: 6px;
+        }
+      }
+      & .contact-form-label__group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        & label {
+          /* Text sm/Medium */
+
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          /* identical to box height, or 143% */
+
+          /* Gray/700 */
+
+          color: #344054;
+        }
+        & input {
+          /* Auto layout */
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 12px 16px;
+          gap: 8px;
+          /* White */
+
+          background: #ffffff;
+          /* Gray/300 */
+
+          border: 1px solid #d0d5dd;
+          /* Shadow/xs */
+
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          border-radius: 8px;
+          &:focus-visible {
+            border-color: #eb8205;
+            outline: #eb8205 !important;
+          }
+        }
+        & textarea {
+          /* Auto layout */
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 12px 16px;
+          gap: 8px;
+          /* White */
+
+          background: #ffffff;
+          /* Gray/300 */
+
+          border: 1px solid #d0d5dd;
+          /* Shadow/xs */
+
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          border-radius: 8px;
+          min-height: 100px;
+          &:focus-visible {
+            border-color: #eb8205;
+            outline: #eb8205 !important;
+          }
+        }
+      }
+    }
   }
+}
+.error {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: red !important;
+  margin-top: 10px;
 }

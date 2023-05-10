@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SupportComponent } from './shared/components/support/support.component';
 import { PartnerspageComponent } from './pages/partnerspage/partnerspage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PhoneMaskDirective } from './shared/directives/phoneMask.directive';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FeaturesItemComponent,
     SupportComponent,
     PartnerspageComponent,
+    PhoneMaskDirective,
   ],
   imports: [
     BrowserModule,
