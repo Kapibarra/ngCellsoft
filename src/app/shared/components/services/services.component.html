@@ -1,1 +1,14 @@
-<p>services works!</p>
+<div class="services__wrapper">
+  <div class="services__title">Наши проекты</div>
+  <div class="services">
+    <div class="services__item" *ngFor="let service of services">
+      <img src="{{ service.img }}" class="services__item-image" />
+      <div class="services__item-title">
+        {{ service.title }}<img src="assets/icons/arrow-icon.png" />
+      </div>
+      <div class="services__item-description">
+        {{ service.description }}
+      </div>
+    </div>
+  </div>
+</div>
