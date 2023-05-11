@@ -18,6 +18,9 @@
     max-width: 720px;
     box-sizing: border-box;
     padding: 100px;
+    @media (max-width: 428px) {
+      padding: 50px 10px;
+    }
     & .contact-form-title {
       /* Display lg/Semibold */
 

@@ -27,6 +27,11 @@
       letter-spacing: -4px;
 
       color: #ffffff;
+      @media (max-width: 428px) {
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1px;
+      }
     }
 
     & .hero__description {

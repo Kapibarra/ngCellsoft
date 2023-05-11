@@ -130,6 +130,9 @@
           #ebff70 99.34%
         );
         filter: blur(35px);
+        @media (max-width: 428px) {
+          width: 300px;
+        }
       }
     }
   }

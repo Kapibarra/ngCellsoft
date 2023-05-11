@@ -2,11 +2,18 @@ import { Component, Input, OnInit } from '@angular/core';
 interface Features {
   id: number;
   title: string;
-
+  icon: string;
   keys?: {
     name: string;
     image: string;
     activeDialog?: boolean;
+    dialogTitle: string;
+    dialogDescription: string;
+    dialogContent: {
+      properties: {
+        name: string;
+      }[];
+    }[];
   }[];
 }
 @Component({
@@ -21,73 +28,46 @@ export class FeaturesComponent implements OnInit {
     {
       id: 1,
       title: 'Функциональные возможности',
+      icon: 'assets/icons/featuresicon01.png',
       keys: [
-        { name: 'Название 1', image: 'url/to/image1.jpg', activeDialog: false },
-        { name: 'Название 2', image: 'url/to/image2.jpg', activeDialog: false },
-        { name: 'Название 3', image: 'url/to/image3.jpg', activeDialog: false },
-        { name: 'Название 4', image: 'url/to/image4.jpg', activeDialog: false },
-        { name: 'Название 5', image: 'url/to/image5.jpg', activeDialog: false },
-        { name: 'Название 6', image: 'url/to/image6.jpg', activeDialog: false },
-      ],
-    },
-    {
-      id: 2,
-      title: 'Режим работы',
-      keys: [
-        { name: 'Название 1', image: 'url/to/image1.jpg', activeDialog: false },
-        { name: 'Название 2', image: 'url/to/image2.jpg', activeDialog: false },
-        { name: 'Название 3', image: 'url/to/image3.jpg', activeDialog: false },
-        { name: 'Название 4', image: 'url/to/image4.jpg', activeDialog: false },
-        { name: 'Название 5', image: 'url/to/image5.jpg', activeDialog: false },
-        { name: 'Название 6', image: 'url/to/image6.jpg', activeDialog: false },
-      ],
-    },
-    {
-      id: 3,
-      title: 'Материалы',
-      keys: [
-        { name: 'Название 1', image: 'url/to/image1.jpg', activeDialog: false },
-        { name: 'Название 2', image: 'url/to/image2.jpg', activeDialog: false },
-        { name: 'Название 3', image: 'url/to/image3.jpg', activeDialog: false },
-        { name: 'Название 4', image: 'url/to/image4.jpg', activeDialog: false },
-        { name: 'Название 5', image: 'url/to/image5.jpg', activeDialog: false },
-        { name: 'Название 6', image: 'url/to/image6.jpg', activeDialog: false },
-      ],
-    },
-    {
-      id: 4,
-      title: 'Производительности и масштабирование',
-      keys: [
-        { name: 'Название 1', image: 'url/to/image1.jpg', activeDialog: false },
-        { name: 'Название 2', image: 'url/to/image2.jpg', activeDialog: false },
-        { name: 'Название 3', image: 'url/to/image3.jpg', activeDialog: false },
-        { name: 'Название 4', image: 'url/to/image4.jpg', activeDialog: false },
-        { name: 'Название 5', image: 'url/to/image5.jpg', activeDialog: false },
-        { name: 'Название 6', image: 'url/to/image6.jpg', activeDialog: false },
-      ],
-    },
-    {
-      id: 5,
-      title: 'Безопасность',
-      keys: [
-        { name: 'Название 1', image: 'url/to/image1.jpg', activeDialog: false },
-        { name: 'Название 2', image: 'url/to/image2.jpg', activeDialog: false },
-        { name: 'Название 3', image: 'url/to/image3.jpg', activeDialog: false },
-        { name: 'Название 4', image: 'url/to/image4.jpg', activeDialog: false },
-        { name: 'Название 5', image: 'url/to/image5.jpg', activeDialog: false },
-        { name: 'Название 6', image: 'url/to/image6.jpg', activeDialog: false },
-      ],
-    },
-    {
-      id: 6,
-      title: 'Совместимомсть',
-      keys: [
-        { name: 'Название 1', image: 'url/to/image1.jpg', activeDialog: false },
-        { name: 'Название 2', image: 'url/to/image2.jpg', activeDialog: false },
-        { name: 'Название 3', image: 'url/to/image3.jpg', activeDialog: false },
-        { name: 'Название 4', image: 'url/to/image4.jpg', activeDialog: false },
-        { name: 'Название 5', image: 'url/to/image5.jpg', activeDialog: false },
-        { name: 'Название 6', image: 'url/to/image6.jpg', activeDialog: false },
+        {
+          name: 'Непосредственная маршрутизация',
+          image: 'assets/images/image12.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'test property',
+                },
+                {
+                  name: 'test property 2',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'Непосредственная маршрутизация 2',
+          image: 'assets/images/image12.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'test property 222',
+                },
+                {
+                  name: 'test property 222',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
   ];

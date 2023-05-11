@@ -3,6 +3,9 @@
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 100px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  margin-bottom: 60px;
   & .services__title {
     /* Display xs/Semibold */
 
@@ -20,7 +23,7 @@
   & .services {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 12px;
     width: 100%;
     max-width: 1200px;
     flex-wrap: wrap;
@@ -35,6 +38,14 @@
       gap: 32px;
       width: 100%;
       max-width: 384px;
+      & .services__item-image {
+        width: 100%;
+        max-width: 384px;
+        & img {
+          width: 100%;
+          max-width: 384px;
+        }
+      }
       & .services__item-title {
         /* Display xs/Semibold */
 

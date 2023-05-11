@@ -6,6 +6,7 @@
   left: 50%;
   transform: translateX(-50%);
   transition: all 250ms ease-in-out;
+  box-sizing: border-box;
   &.filled {
     background: #eb8205;
     transition: all 250ms ease-in-out;
@@ -33,6 +34,9 @@
   display: flex;
   justify-content: space-between;
   transition: all 250ms ease-in-out;
+  @media (max-width: 428px) {
+    padding: 35px 10px;
+  }
 }
 
 .header__inner-wrapper {

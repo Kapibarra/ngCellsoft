@@ -25,6 +25,20 @@
                 (click)="itemFeatures.activeDialog = false"
               />
             </div>
+            <div class="features__dialog-content">
+              {{ itemFeatures.name }}
+            </div>
+            <div class="features__dialog-content">
+              {{ itemFeatures.dialogDescription }}
+            </div>
+            <div
+              class="features__dialog-properties"
+              *ngFor="let content of itemFeatures.dialogContent"
+            >
+              <p *ngFor="let property of content.properties">
+                {{ property.name }}
+              </p>
+            </div>
             <img
               class="features__dialog-description"
               [src]="itemFeatures.image"
