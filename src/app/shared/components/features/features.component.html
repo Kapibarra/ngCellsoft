@@ -13,6 +13,7 @@
         >
           <div class="features__item-title">
             {{ itemFeatures.name }}
+            <img src="{{ itemFeatures.image }}" />
           </div>
           <div
             class="features__dialog"
@@ -25,10 +26,11 @@
                 (click)="itemFeatures.activeDialog = false"
               />
             </div>
-            <div class="features__dialog-content">
+            <div class="features__dialog-title">
               {{ itemFeatures.name }}
             </div>
-            <div class="features__dialog-content">
+            <img class="features__dialog-image" [src]="itemFeatures.image" />
+            <div class="features__dialog-description">
               {{ itemFeatures.dialogDescription }}
             </div>
             <div
@@ -39,10 +41,7 @@
                 {{ property.name }}
               </p>
             </div>
-            <img
-              class="features__dialog-description"
-              [src]="itemFeatures.image"
-            />
+
             <div
               class="features__dialog-overlay"
               (click)="itemFeatures.activeDialog = false"
