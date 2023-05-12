@@ -25,6 +25,8 @@ import { PartnerspageComponent } from './pages/partnerspage/partnerspage.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PhoneMaskDirective } from './shared/directives/phoneMask.directive';
 import { SupportpageComponent } from './pages/supportpage/supportpage.component';
+import { PopUpComponent } from './shared/components/pop-up/pop-up.component';
+import { DialogDirective } from './shared/directives/dialog.directive';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { SupportpageComponent } from './pages/supportpage/supportpage.component'
     PartnerspageComponent,
     PhoneMaskDirective,
     SupportpageComponent,
+    PopUpComponent,
+    DialogDirective,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +61,7 @@ import { SupportpageComponent } from './pages/supportpage/supportpage.component'
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [DialogDirective],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

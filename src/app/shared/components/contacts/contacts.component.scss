@@ -1,4 +1,5 @@
 .contacts__wrapper {
+  margin-bottom: 150px;
   & .contacts {
     & .contacts__title {
       font-family: "Inter";
@@ -30,6 +31,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
+      gap: 10px;
 
       & .contacts__input-title {
         /* Capital/1 regular */
