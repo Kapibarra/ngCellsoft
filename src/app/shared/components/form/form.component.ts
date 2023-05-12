@@ -7,7 +7,7 @@ import {
   transition,
   animate,
 } from '@angular/animations';
-
+import { HttpClient } from '@angular/common/http';
 export const errorAnimation = trigger('errorAnimation', [
   state('void', style({ opacity: 0 })),
   state('*', style({ opacity: 1 })),
@@ -27,8 +27,9 @@ export class FormComponent implements OnInit {
   city: any;
   message: any;
   service: any;
-
-  constructor(private formBuilder: FormBuilder) {}
+  successMessage: string | undefined;
+  errorMessage: string | undefined;
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) {}
 
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
@@ -57,6 +58,28 @@ export class FormComponent implements OnInit {
 
   onSubmit() {
     if (this.contactForm.valid) {
+      const formData = new FormData();
+      formData.append('name', this.contactForm?.get('name')?.value);
+      formData.append('email', this.contactForm?.get('email')?.value);
+      formData.append('message', this.contactForm?.get('message')?.value);
+      formData.append('service', this.contactForm?.get('service')?.value);
+      formData.append('city', this.contactForm?.get('city')?.value);
+      formData.append('inn', this.contactForm?.get('inn')?.value);
+      formData.append('phone', this.contactForm?.get('phone')?.value);
+      this.http.post('assets/handler.php', formData).subscribe(
+        (response) => {
+          console.log('Форма успешно отправлена!');
+          console.log(response);
+          // здесь можно добавить логику для вывода сообщения об успешной отправке формы
+          this.successMessage = 'Сообщение отправлено!';
+        },
+        (error) => {
+          console.error('Упс... Что то пошло не так...');
+          console.error(error);
+          this.errorMessage = 'Упс... Что то пошло не так...';
+          // здесь можно добавить логику для вывода сообщения об ошибке при отправке формы
+        }
+      );
       console.log('Form submitted successfully!');
       console.log(this.contactForm.value);
     }
