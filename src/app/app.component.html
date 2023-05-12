@@ -1,4 +1,5 @@
 <app-header></app-header>
-<router-outlet> </router-outlet>
+<router-outlet [@pageTransition]="o?.isActivated ? o?.activatedRoute : ''">
+</router-outlet>
 <app-footer></app-footer>
 <app-pop-up></app-pop-up>
