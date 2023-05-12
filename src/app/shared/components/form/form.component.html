@@ -151,5 +151,9 @@
     >
       Отправить
     </button>
+    <div *ngIf="successMessage" class="success">Сообщение отправлено!</div>
+    <div *ngIf="errorMessage" class="error">
+      Ошибка при отправке сообщения: {{ errorMessage }}
+    </div>
   </form>
 </div>

@@ -29,6 +29,7 @@ import { PopUpComponent } from './shared/components/pop-up/pop-up.component';
 import { DialogDirective } from './shared/directives/dialog.directive';
 import { ContactspageComponent } from './pages/contactspage/contactspage.component';
 import { BuypageComponent } from './pages/buypage/buypage.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { BuypageComponent } from './pages/buypage/buypage.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [DialogDirective],
   bootstrap: [AppComponent],

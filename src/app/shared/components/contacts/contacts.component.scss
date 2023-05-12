@@ -64,7 +64,15 @@
         text-align: center;
 
         color: #000000;
-
+        & .social__media-wrapper {
+          & .social__media-icon {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 25px;
+          }
+        }
         & a {
           text-decoration: none;
           color: #000000;
