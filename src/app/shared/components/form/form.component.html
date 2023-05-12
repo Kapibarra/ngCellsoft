@@ -151,6 +151,13 @@
     >
       Отправить
     </button>
+    <div class="checkbox-wrapper">
+      <label class="checkbox-label">
+        <input type="checkbox" formControlName="policyAgreement" checked />
+        Я согласен с <a href="#">политикой конфиденциальности</a>
+      </label>
+    </div>
+
     <div *ngIf="successMessage" class="success">Сообщение отправлено!</div>
     <div *ngIf="errorMessage" class="error">
       Ошибка при отправке сообщения: {{ errorMessage }}
