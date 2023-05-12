@@ -27,6 +27,8 @@ import { PhoneMaskDirective } from './shared/directives/phoneMask.directive';
 import { SupportpageComponent } from './pages/supportpage/supportpage.component';
 import { PopUpComponent } from './shared/components/pop-up/pop-up.component';
 import { DialogDirective } from './shared/directives/dialog.directive';
+import { ContactspageComponent } from './pages/contactspage/contactspage.component';
+import { BuypageComponent } from './pages/buypage/buypage.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { DialogDirective } from './shared/directives/dialog.directive';
     SupportpageComponent,
     PopUpComponent,
     DialogDirective,
+    ContactspageComponent,
+    BuypageComponent,
   ],
   imports: [
     BrowserModule,
