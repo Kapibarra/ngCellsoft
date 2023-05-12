@@ -155,3 +155,78 @@
     }
   }
 }
+.green {
+  /* Auto layout */
+  padding: 6px 18px;
+
+  background: #ecfdf3;
+  border-radius: 8px;
+  /* Text sm/Medium */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align: center;
+
+  color: #027a48;
+}
+.yellow {
+  /* Auto layout */
+  padding: 6px 18px;
+
+  background: #f1ffb3;
+  border-radius: 8px;
+  /* Text sm/Medium */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align: center;
+
+  color: #928d41;
+}
+.orange {
+  /* Auto layout */
+  padding: 6px 18px;
+  background: #fff6ed;
+  border-radius: 8px;
+  /* Text sm/Medium */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align: center;
+
+  color: #c4320a;
+}
+.red {
+  /* Auto layout */
+  padding: 6px 18px;
+
+  background: #fff1f3;
+  border-radius: 8px;
+  /* Text sm/Medium */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align: center;
+
+  color: #c01048;
+}

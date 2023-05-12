@@ -15,7 +15,6 @@
         </div>
 
         <div
-          [@errorAnimation]
           *ngIf="
             contactForm.get('name')?.invalid && contactForm.get('name')?.touched
           "
@@ -36,7 +35,6 @@
         </div>
 
         <div
-          [@errorAnimation]
           *ngIf="
             contactForm.get('email')?.invalid &&
             contactForm.get('email')?.touched
@@ -71,12 +69,10 @@
             id="phone"
             formControlName="phone"
             required
-            pattern="^\d{10}$"
             appPhoneMask
           />
         </div>
         <div
-          [@errorAnimation]
           *ngIf="
             contactForm.get('phone')?.invalid &&
             contactForm.get('phone')?.touched
@@ -96,11 +92,15 @@
           </div>
         </div>
       </div>
+      <button
+        class="close__button"
+        type="submit"
+        [disabled]="!contactForm.valid"
+      >
+        Отправить
+      </button>
     </form>
 
-    <button class="close__button" type="submit" [disabled]="!contactForm.valid">
-      Отправить
-    </button>
     <!-- Форма здесь -->
     <div class="form__logo">
       <img src="assets/images/logo-dark.png" width="140px" />

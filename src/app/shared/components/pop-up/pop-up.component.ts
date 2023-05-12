@@ -39,7 +39,7 @@ export class PopUpComponent implements OnInit {
         '',
         [Validators.required, Validators.email, this.customEmailValidator],
       ],
-      phone: ['', [Validators.required, Validators.pattern(/^\d{10}$/)]],
+      phone: ['', [Validators.required]],
     });
   }
 
