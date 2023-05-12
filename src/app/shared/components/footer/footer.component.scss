@@ -21,22 +21,22 @@
       border-bottom: 1px solid #1e293b;
       & .footer__menu {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        align-items: center;
         gap: 30px;
-        & li a {
-          /* Semi-bold/16px */
-          text-decoration: none;
+        list-style: none;
+        padding-inline-start: 40px;
+        li a {
+          color: #fff;
           font-family: "Inter";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 24px;
-          /* identical to box height, or 150% */
-
-          /* gray/100 */
-
-          color: #f4f4f5;
+          text-decoration: none;
+          transition: all 250ms ease-in-out;
+          box-sizing: border-box;
+          border-bottom: 1px solid rgba(255, 255, 255, 0);
+          &:hover {
+            transition: all 250ms ease-in-out;
+            color: #eb8205;
+            cursor: pointer;
+          }
         }
       }
       & .footer__social-wrapper {

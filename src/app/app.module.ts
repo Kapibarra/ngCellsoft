@@ -24,6 +24,7 @@ import { SupportComponent } from './shared/components/support/support.component'
 import { PartnerspageComponent } from './pages/partnerspage/partnerspage.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PhoneMaskDirective } from './shared/directives/phoneMask.directive';
+import { SupportpageComponent } from './pages/supportpage/supportpage.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { PhoneMaskDirective } from './shared/directives/phoneMask.directive';
     SupportComponent,
     PartnerspageComponent,
     PhoneMaskDirective,
+    SupportpageComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,8 +9,18 @@
       </a>
       <nav class="header__navigation" *ngIf="!mobile">
         <ul>
-          <li *ngFor="let route of currentRoutes" [routerLink]="[route.path]">
-            {{ route.data!["navLabel"] }}
+          <li>
+            <a routerLink="/" class="header__navigation-link">Главная</a>
+          </li>
+          <li>
+            <a routerLink="/support" class="header__navigation-link"
+              >Техподдержка</a
+            >
+          </li>
+          <li>
+            <a routerLink="/partners" class="header__navigation-link"
+              >Партнерам</a
+            >
           </li>
         </ul>
       </nav>
