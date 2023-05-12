@@ -9,7 +9,7 @@ interface Features {
     activeDialog?: boolean;
     dialogTitle: string;
     dialogDescription: string;
-    dialogContent: {
+    dialogContent?: {
       properties: {
         name: string;
       }[];
@@ -28,11 +28,11 @@ export class FeaturesComponent implements OnInit {
     {
       id: 1,
       title: 'Функциональные возможности',
-      icon: 'assets/icons/featuresicon01.png',
+      icon: 'assets/icons/feature0.png',
       keys: [
         {
           name: 'Режимы балансировки',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature01.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description',
@@ -93,7 +93,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Сервисные мониторы',
-          image: 'assets/images/image133.png',
+          image: 'assets/images/features/feature02.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -130,7 +130,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Контроль и модификация HTTP',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature03.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -167,7 +167,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Компрессия и кеширование',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature04.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -192,7 +192,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Аудит трафика',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature05.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -223,7 +223,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Централизованный мониторинг',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature06.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -261,7 +261,7 @@ export class FeaturesComponent implements OnInit {
       keys: [
         {
           name: 'Непосредственная маршрутизация',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature07.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description',
@@ -286,7 +286,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Проксирование',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature08.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -311,7 +311,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Мультиплексирование',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature09.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -333,7 +333,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Раскрытие SSL',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature10.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -358,7 +358,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'SSL мост',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature11.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -383,7 +383,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Поддержка SNI',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature12.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -412,7 +412,7 @@ export class FeaturesComponent implements OnInit {
       keys: [
         {
           name: 'Сохранение состояний',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature13.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description',
@@ -443,7 +443,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Производительность',
-          image: 'assets/images/image133.png',
+          image: 'assets/images/features/feature14.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -474,7 +474,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Кластер, надежность и масштабирование',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature15.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -502,7 +502,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Масштабирование 2.0',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature16.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -527,7 +527,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'Геораспределенные системы и глобальная балансировка',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature17.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -558,7 +558,7 @@ export class FeaturesComponent implements OnInit {
         },
         {
           name: 'REST API',
-          image: 'assets/images/image12.png',
+          image: 'assets/images/features/feature18.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -583,6 +583,277 @@ export class FeaturesComponent implements OnInit {
               ],
             },
           ],
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: 'Безопасность',
+      icon: 'assets/icons/featuresicon01.png',
+      keys: [
+        {
+          name: 'Режимы балансировки',
+          image: 'assets/images/features/feature19.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Round Robin',
+                },
+                {
+                  name: 'Least Connections',
+                },
+                {
+                  name: 'Source IP / Hash',
+                },
+                {
+                  name: 'SSL session ID',
+                },
+                {
+                  name: 'Cookie и HTTP headers',
+                },
+                {
+                  name: 'Persistence',
+                },
+                {
+                  name: 'Время ответа сервера',
+                },
+                {
+                  name: 'ACL',
+                },
+                {
+                  name: 'Пользовательские логические конструкции',
+                },
+                {
+                  name: 'Резервные бэкенды и группы доступности',
+                },
+                {
+                  name: '«Веса» и приоритеты серверов',
+                },
+                {
+                  name: 'Изменение портов балансируемого сервиса',
+                },
+                {
+                  name: 'Группировка сетевых портов и сервисов',
+                },
+                {
+                  name: 'Pooling сессий бэкенда',
+                },
+                {
+                  name: 'Ограничение сессий для серверов',
+                },
+                {
+                  name: 'Поддержка сегментов маршрутизации',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'Сервисные мониторы',
+          image: 'assets/images/features/feature20.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Контроль физических портов адаптера',
+                },
+                {
+                  name: 'Протоколы health check (TCP, UDP, ICMP, ARP)',
+                },
+                {
+                  name: 'Сервисы (DNS, LDAP/S, HTTP/S, FTP, IMAP, POP3, SIP, SMTP, SNMP, Kerberos, SSL Hello)',
+                },
+                {
+                  name: 'Специализированные HTTP GET запросы',
+                },
+                {
+                  name: 'Пользовательские варианты проверок и поддержка автоматизации / скриптов',
+                },
+                {
+                  name: 'Логические комбинации перечисленных вариантов',
+                },
+                {
+                  name: 'Настраиваемое количество положительных и отрицательных проб для фиксации доступности',
+                },
+                {
+                  name: 'Гибкая настройка таймаутов и keepalive',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'Контроль и модификация HTTP',
+          image: 'assets/images/features/feature21.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Content based switching',
+                },
+                {
+                  name: 'HTTP redirect',
+                },
+                {
+                  name: 'HTTP rewrite запросов',
+                },
+                {
+                  name: 'HTTP rewrite ответов',
+                },
+                {
+                  name: 'Модификация headers',
+                },
+                {
+                  name: 'HTTP-мониторы контроль доступности через GET-запросы',
+                },
+                {
+                  name: 'Мультипликация',
+                },
+                {
+                  name: 'Возможность отправки PUT/POST-запросов',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'Компрессия и кеширование',
+          image: 'assets/images/features/feature22.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Сокращение нагрузки серверов приложений',
+                },
+                {
+                  name: 'Оптимизация трафика каналов связи',
+                },
+                {
+                  name: 'Настройка гибких политик и правил',
+                },
+                {
+                  name: 'Персонализация',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'Аудит трафика',
+          image: 'assets/images/features/feature23.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Запись метаданных сессий (время, IP источника и назначения, порты, заголовки и т.п.)',
+                },
+                {
+                  name: 'Запись содержимого запросов и ответов HTTP (GET/PUT/POST)',
+                },
+                {
+                  name: 'Создание и настройка триггеров записи',
+                },
+                {
+                  name: 'Mirroring',
+                },
+                {
+                  name: 'Отправка на внешний сервер хранения',
+                },
+                {
+                  name: 'Интеграция с ELK',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          name: 'Централизованный мониторинг',
+          image: 'assets/images/features/feature24.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Статистика по сессиям, очередям, трафику, заголовкам, серверам и не только',
+                },
+                {
+                  name: 'Статусы и состояния сервисов',
+                },
+                {
+                  name: 'Счётчики ошибок и времени доступности',
+                },
+                {
+                  name: 'Поддержка ZABBIX',
+                },
+                {
+                  name: 'Поддержка Prometheus',
+                },
+                {
+                  name: 'Интеграция с ELK',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 5,
+      title: 'Совместимость',
+      icon: 'assets/icons/featuresicon01.png',
+      keys: [
+        {
+          name: 'Регулярные тесты на совместимость оборудования и программного обеспечения позволяют БИТС.БАЛАНС стабильно работать с максимальным перечнем решений.',
+          image: 'assets/images/features/feature25.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description',
+        },
+        {
+          name: 'Постоянно расширяем перечень поддерживаемых систем, готовы адаптировать функционал для новых решений.',
+          image: 'assets/images/features/feature26.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+        },
+        {
+          name: 'Операционные системы: Astra Linux (Орел, Воронеж, Смоленск), Альт (Сервер и Сервер СП), РЕД ОС, Debian, SUSE SLES, RHEL, Microsoft Windows, MacOS',
+          image: 'assets/images/features/feature27.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+        },
+        {
+          name: 'Платформы виртуализации: VMware vSphere, Citrix XenServer, Microsoft Hyper-V, БРЕСТ, Горизонт-ВС, oVirt, zVirt, Ред Виртуализация',
+          image: 'assets/images/features/feature28.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
+        },
+        {
+          name: 'Приложения: PostgersPro, CommuniGate Pro, Microsoft Exchange, MS SQL Server, Citrix XenDesktop, VMware Horizon, FreeIPA, SambaDC, CUPS,, Mind, Trueconf',
+          image: 'assets/images/features/feature29.png',
+          activeDialog: false,
+          dialogTitle: 'test',
+          dialogDescription: 'test description 2',
         },
       ],
     },

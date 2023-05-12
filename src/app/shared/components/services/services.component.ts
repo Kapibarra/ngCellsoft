@@ -14,24 +14,24 @@ export class ServicesComponent implements OnInit {
   services: Services[] = [
     {
       id: 1,
-      title: 'Название проекта',
+      title: 'Федеральные заказчики',
       img: 'assets/images/service01.png',
       description:
-        'Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?',
+        '- миграция с F5 BIG-IP и Radware Alteon ключевых ГИС и ИС (КИИ)',
     },
     {
       id: 2,
-      title: 'Название проекта',
-      img: 'assets/images/service01.png',
+      title: 'Ритейл',
+      img: 'assets/images/service02.png',
       description:
-        'Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?',
+        '– создание георезервируемых ДЦ (GSLB)  \n  - миграция с Cirtix NetScaler подсистем ЭП, порталов и CRM',
     },
     {
       id: 3,
-      title: 'Название проекта',
-      img: 'assets/images/service01.png',
+      title: 'Финансовые учреждения',
+      img: 'assets/images/service03.png',
       description:
-        'Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?',
+        '–подсистемы балансировки для виртуализации АРМ и приложений  \n  –«витрина» приложений, интеграция с Континент TLS и Kerberos',
     },
   ];
 
