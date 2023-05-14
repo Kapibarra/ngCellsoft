@@ -31,6 +31,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.onScroll(event);
     if (window.screen.width <= 968) {
       this.mobile = true;
       console.log(this.mobile);

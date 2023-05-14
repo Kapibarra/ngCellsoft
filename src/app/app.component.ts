@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { NavigationEnd, Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -22,4 +23,23 @@ export class AppComponent {
   title =
     'БИТС.БАЛАНС | Обеспечим гибкую балансировку и распределение нагрузки, масштабирование, надежность и георезервирование любых ваших сервисов, любой сложности';
   o: any;
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    const scrollToTopPaths = [
+      '/partners',
+      '/',
+      '/support',
+      '/buy',
+      '/contacts',
+    ];
+    this.router.events.subscribe((event) => {
+      if (
+        event instanceof NavigationEnd &&
+        scrollToTopPaths.includes(event.url)
+      ) {
+        window.scrollTo(0, 0);
+      }
+    });
+  }
 }
