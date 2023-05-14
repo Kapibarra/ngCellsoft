@@ -700,7 +700,7 @@ export class FeaturesComponent implements OnInit {
       id: 5,
       title: 'Совместимость',
       icon: 'assets/icons/featuresicon01.png',
-      description: '',
+      description: 'Клиенты подключаются не к конечным приложениям, а к контроллерам доставки приложений, в результате обеспечивается высокий уровень безопасности. При создании сессий выполняются необходимые проверки безопасности с применением гибких настраиваемых алгоритмов и правил. Обеспечивается эффективное использование каналов связи и аппаратных мощностей оборудования для полезных нагрузок.',
       keys: [
         {
           name: 'Регулярные тесты',
@@ -855,10 +855,10 @@ export class FeaturesComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor() { }
   active = false;
   @Input() init!: boolean;
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   toggleDialog($event: any) {
     console.log($event);
     this.active = !this.active;

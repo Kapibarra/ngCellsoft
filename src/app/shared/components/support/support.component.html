@@ -4,21 +4,57 @@
     <div class="support__content">
       Специалисты БИТС.БАЛАНС ответят на обращения и придут на помощь по
       телефону или на
-      <a href="https://support.bitsis.ru" target="_blank" style="color: #eb8205"
-        >портале технической поддержки</a
-      >
+      <a href="https://support.bitsis.ru" target="_blank" style="color: #eb8205">портале технической поддержки</a>
       в удобное для вас время.
     </div>
+    <div class="contacts__wrapper">
+      <div class="contacts">
+        <div class="input__wrapper">
+          <div class="contacts__input-title">E-mail</div>
+          <div class="contacts__inputs-content">
+            <a href="mailto:support@bitsis.ru" class="inputs__content-link">support@bitsis.ru</a>
+          </div>
+        </div>
+        <div class="input__wrapper">
+          <div class="contacts__input-title">Телефон</div>
+          <div class="contacts__inputs-content">
+            <a href="tel:+74952877778" class="inputs__content-link">7 (495) 287-77-78 / доб. 2</a>
+          </div>
+        </div>
+        <div class="input__wrapper">
+          <div class="contacts__input-title">Social Media</div>
+          <div class="contacts__inputs-content">
+            <div class="social__media-wrapper">
+              <div class="social__media-icon">
+                <a href="tel:+74952877778"><img src="assets/icons/phone.png" width="40px" /></a>
+                <a href="mailto:support@bitsis.ru"><img src="assets/icons/mail.png" width="40px" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button__wrapper">
+      <a href="https://support.bitsis.ru" target="_blank"><button class="support__button">Портал
+          техподдержки</button></a>
+      <a (click)="onClickScroll('critical')" target="_blank"><button class="support__button-black">Уровни
+          критичности</button></a>
+    </div>
 
-    <a href="https://support.bitsis.ru" target="_blank"
-      ><button class="support__button">Портал техподдержки</button></a
-    >
   </div>
 </div>
+<div class="support__anchor" id="critical"></div>
 <div class="support__items-wrapper">
   <div class="support__item">
     <div class="support__item-title">
-      Серьезность <span class="red">1 Критичая</span>
+      Серьезность <span class="red">Критичая</span>
+    </div>
+    <div class="support__item-reaction">
+      Реакция : <span class="highlighted">1 час</span>
+    </div>
+    <div class="support__item-desigion">
+      <span style="color: green; font-weight: 500;">Решение : </span> <span class="highlighted">не более 4 рабочих
+        часов</span>
     </div>
     <div class="support__item-description">
       Проблема серьезно влияет на возможность использования ПО в
@@ -26,16 +62,18 @@
       систем). Возникшая проблема влечет за собой приостановку операционной
       деятельности Заказчика и не имеет процедурного обходного решения.
     </div>
-    <div class="support__item-reaction">
-      Реакция : <span class="highlighted">1 час</span>
-    </div>
-    <div class="support__item-desigion">
-      Решение : <span class="highlighted">не более 4 рабочих часов</span>
-    </div>
+
   </div>
   <div class="support__item">
     <div class="support__item-title">
       Серьезность <span class="orange">Высокая</span>
+    </div>
+    <div class="support__item-reaction">
+      Реакция : <span class="highlighted">2 часа</span>
+    </div>
+    <div class="support__item-desigion">
+      <span style="color: green; font-weight: 500;">Решение : </span> <span class="highlighted">не более 2 рабочих
+        дней</span>
     </div>
     <div class="support__item-description">
       Проблема, при которой ПО сохраняет работоспособность, но возможность
@@ -44,16 +82,18 @@
       приводит к серьезному частичному нарушению операционной деятельности
       Заказчика и не имеет обходного решения
     </div>
-    <div class="support__item-reaction">
-      Реакция : <span class="highlighted">2 часа</span>
-    </div>
-    <div class="support__item-desigion">
-      Решение : <span class="highlighted">не более 2 рабочих дней</span>
-    </div>
+
   </div>
   <div class="support__item">
     <div class="support__item-title">
       Серьезность <span class="yellow">Средняя</span>
+    </div>
+    <div class="support__item-reaction">
+      Реакция : <span class="highlighted">4 часа</span>
+    </div>
+    <div class="support__item-desigion">
+      <span style="color: green; font-weight: 500;">Решение : </span> <span class="highlighted">не более 5 рабочих
+        дней</span>
     </div>
     <div class="support__item-description">
       Проблема приводит к частичной и некритической утрате возможности
@@ -63,16 +103,18 @@
       Заказчика возможности продолжать работу (возможно с использованием
       процедурного обходного решения).
     </div>
-    <div class="support__item-reaction">
-      Реакция : <span class="highlighted">4 часа</span>
-    </div>
-    <div class="support__item-desigion">
-      Решение : <span class="highlighted">не более 5 рабочих дней</span>
-    </div>
+
   </div>
   <div class="support__item">
     <div class="support__item-title">
       Серьезность <span class="green">Низкая</span>
+    </div>
+    <div class="support__item-reaction">
+      Реакция : <span class="highlighted">1 рабочий день</span>
+    </div>
+    <div class="support__item-desigion">
+      <span style="color: green; font-weight: 500;">Решение : </span> <span class="highlighted">не более 10 рабочих
+        дней</span>
     </div>
     <div class="support__item-description">
       Общие вопросы по использованию ПО, сообщения об ошибках в документации или
@@ -84,11 +126,6 @@
       не лишает Заказчика возможности продолжать работу (возможно с
       использованием процедурного обходного решения.
     </div>
-    <div class="support__item-reaction">
-      Реакция : <span class="highlighted">1 рабочий день</span>
-    </div>
-    <div class="support__item-desigion">
-      Решение : <span class="highlighted">не более 10 рабочих дней</span>
-    </div>
+
   </div>
 </div>

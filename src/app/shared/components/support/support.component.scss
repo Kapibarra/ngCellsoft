@@ -2,7 +2,8 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 200px;
+  padding-top: 200px;
+
   & .support {
     /* Auto layout */
 
@@ -46,14 +47,17 @@
 
       color: #667085;
     }
+
     & a {
       text-decoration: none;
     }
+
     & .support__button {
       width: fit-content;
       height: 60px;
       display: flex;
       flex-direction: column;
+      min-width: 255px;
       justify-content: center;
       align-items: center;
       padding: 16px 24px;
@@ -85,6 +89,7 @@
     }
   }
 }
+
 .support__items-wrapper {
   width: 100%;
   max-width: 1200px;
@@ -98,6 +103,7 @@
   justify-content: space-between;
   margin-top: 60px;
   gap: 20px;
+
   & .support__item {
     width: 100%;
     max-width: 580px;
@@ -106,6 +112,7 @@
     margin-bottom: 40px;
     background: #f9fafb;
     border-radius: 16px;
+
     & .support__item-title {
       /* Text lg/Medium */
 
@@ -119,6 +126,7 @@
       color: #101828;
       margin-bottom: 15px;
     }
+
     & .support__item-description {
       font-family: "Inter";
       font-style: normal;
@@ -130,6 +138,7 @@
       color: #667085;
       margin-bottom: 15px;
     }
+
     & .support__item-reaction {
       /* Regular/21px */
 
@@ -143,6 +152,7 @@
       color: #101828;
       margin-bottom: 10px;
     }
+
     & .support__item-desigion {
       /* Regular/21px */
 
@@ -151,12 +161,14 @@
       font-weight: 300;
       font-size: 20px;
       line-height: 20px;
+      margin-bottom: 20px;
       /* or 162% */
 
       color: #101828;
     }
   }
 }
+
 .green {
   /* Auto layout */
   padding: 6px 18px;
@@ -176,6 +188,7 @@
 
   color: #027a48;
 }
+
 .yellow {
   /* Auto layout */
   padding: 6px 18px;
@@ -195,6 +208,7 @@
 
   color: #928d41;
 }
+
 .orange {
   /* Auto layout */
   padding: 6px 18px;
@@ -213,6 +227,7 @@
 
   color: #c4320a;
 }
+
 .red {
   /* Auto layout */
   padding: 6px 18px;
@@ -231,4 +246,136 @@
   text-align: center;
 
   color: #c01048;
+}
+
+.button__wrapper {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.support__button-black {
+  /* gray/900 */
+  color: #fff;
+  background: #18181b;
+  border-radius: 10px;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  width: fit-content;
+  min-width: 255px;
+  height: 60px;
+  filter: blur(0px) !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #ffffff;
+  border-width: 2px;
+  border-style: none !important;
+  border-color: none !important;
+  border-image: none !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.contacts__wrapper {
+  margin-bottom: 20px;
+
+  & .contacts {
+    & .contacts__title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+      /* identical to box height, or 29px */
+
+      text-align: center;
+
+      color: #eb8205;
+    }
+
+    & .contacts__subtitle {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      /* identical to box height, or 28px */
+
+      text-align: center;
+
+      color: #000000;
+    }
+
+    & .input__wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 10px;
+
+      & .contacts__input-title {
+        /* Capital/1 regular */
+        margin-top: 20px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 140%;
+        /* or 18px */
+
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+
+        color: #000000;
+      }
+
+      & .contacts__inputs-content {
+        /* Title/1 strong */
+
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        /* or 38px */
+
+        text-align: center;
+
+        color: #000000;
+
+        & .social__media-wrapper {
+          & .social__media-icon {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 25px;
+          }
+        }
+
+        & a {
+          text-decoration: none;
+          color: #000000;
+        }
+      }
+    }
+  }
 }
