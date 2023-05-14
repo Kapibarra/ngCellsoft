@@ -3,38 +3,58 @@
   <div class="features">
     <div class="features__title">Ключевые возможности</div>
     <div class="features__subtitle">
-      Контроллер доставки приложений БИТС.БАЛАНС - это высокопроизводительный балансировщик нагрузки нового поколения. В
-      дополнение к стандартному базовому функционалу для обеспечения доступности сервисов и распределения нагрузки
-      БИТС.БАЛАНС предоставляет функционал для задач георезервирования GSLB, кэширования, WAF и защиты от DDoS, контроль
-      и аудит трафика, пооддержки единого входа SSO.
+      Контроллер доставки приложений БИТС.БАЛАНС - это высокопроизводительный
+      балансировщик нагрузки нового поколения. В дополнение к стандартному
+      базовому функционалу для обеспечения доступности сервисов и распределения
+      нагрузки БИТС.БАЛАНС предоставляет функционал для задач георезервирования
+      GSLB, кэширования, WAF и защиты от DDoS, контроль и аудит трафика,
+      пооддержки единого входа SSO.
     </div>
     <div class="accordion__module">
       <app-features-item *ngFor="let item of features" title="{{ item.title }}">
         <div class="feature__description">{{ item.description }}</div>
-        <div class="features__item" *ngFor="let itemFeatures of item.keys"
-          (click)="itemFeatures.activeDialog = !itemFeatures.activeDialog">
+        <div
+          class="features__item"
+          *ngFor="let itemFeatures of item.keys"
+          (click)="itemFeatures.activeDialog = !itemFeatures.activeDialog"
+        >
           <div class="features__item-title">
             {{ itemFeatures.name }}
             <img src="{{ itemFeatures.image }}" />
           </div>
-          <div class="features__dialog" [class.active]="itemFeatures.activeDialog" (click)="$event.stopPropagation()">
+          <div
+            class="features__dialog"
+            [class.active]="itemFeatures.activeDialog"
+            (click)="$event.stopPropagation()"
+          >
             <div class="features__dialog-button">
-              <img src="assets/icons/open-icon.png" (click)="itemFeatures.activeDialog = false" />
+              <img
+                src="assets/icons/open-icon.png"
+                (click)="itemFeatures.activeDialog = false"
+              />
             </div>
             <div class="features__dialog-title">
               {{ itemFeatures.name }}
             </div>
-            <img class="features__dialog-image" [src]="itemFeatures.dialogImage" />
-            <div class="features__dialog-description">
-              {{ itemFeatures.dialogDescription }}
-            </div>
-            <div class="features__dialog-properties" *ngFor="let content of itemFeatures.dialogContent">
-              <p *ngFor="let property of content.properties">
-                {{ property.name }}
-              </p>
+            <div class="features__dialog-inner-wrapper">
+              <div
+                class="features__dialog-properties"
+                *ngFor="let content of itemFeatures.dialogContent"
+              >
+                <p *ngFor="let property of content.properties">
+                  {{ property.name }}
+                </p>
+              </div>
+              <img
+                class="features__dialog-image"
+                [src]="itemFeatures.dialogImage"
+              />
             </div>
 
-            <div class="features__dialog-overlay" (click)="itemFeatures.activeDialog = false"></div>
+            <div
+              class="features__dialog-overlay"
+              (click)="itemFeatures.activeDialog = false"
+            ></div>
           </div>
         </div>
       </app-features-item>

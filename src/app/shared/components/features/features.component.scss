@@ -46,6 +46,12 @@
         @media (max-width: 428px) {
           width: 95%;
         }
+        & .features__dialog-inner-wrapper {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
         & .features__dialog-image {
           width: 100%;
           max-width: 500px;
@@ -73,18 +79,22 @@
           font-family: "Inter";
           font-style: normal;
           font-weight: 400;
-          font-size: 20px;
+          font-size: 22px;
           text-transform: uppercase;
-          text-align: center;
+          text-align: left;
           line-height: 18px;
           color: #101828;
+          padding-bottom: 10px;
           margin-bottom: 15px;
+          border-bottom: 1px solid #f0f0f0;
         }
         & .features__dialog-properties {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
-          justify-content: flex-start;
+          width: 100%;
+          max-width: 600px;
+          justify-content: space-between;
           align-items: flex-start;
           margin-bottom: 50px;
           gap: 8px;
