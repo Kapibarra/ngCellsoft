@@ -39,8 +39,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature01.png',
           dialogImage: 'assets/images/features/pics/01.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description',
+          dialogTitle: '',
+          dialogDescription: ' ',
           dialogContent: [
             {
               properties: [
@@ -101,8 +101,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature02.png',
           activeDialog: false,
           dialogImage: 'assets/images/features/pics/02.png',
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -139,8 +139,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature03.png',
           dialogImage: 'assets/images/features/pics/03.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -177,8 +177,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature04.png',
           dialogImage: 'assets/images/features/pics/04.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -203,8 +203,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature05.png',
           dialogImage: 'assets/images/features/pics/05.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -235,8 +235,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature06.png',
           dialogImage: 'assets/images/features/pics/06.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -276,8 +276,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature07.png',
           dialogImage: 'assets/images/features/pics/07.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -302,8 +302,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature08.png',
           dialogImage: 'assets/images/features/pics/08.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -328,8 +328,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature09.png',
           dialogImage: 'assets/images/features/pics/09.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -351,8 +351,8 @@ export class FeaturesComponent implements OnInit {
           image: 'assets/images/features/feature10.png',
           dialogImage: 'assets/images/features/pics/10.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -376,8 +376,8 @@ export class FeaturesComponent implements OnInit {
           name: 'SSL мост',
           image: 'assets/images/features/feature11.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -401,8 +401,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Поддержка SNI',
           image: 'assets/images/features/feature12.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -432,8 +432,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Сохранение состояний',
           image: 'assets/images/features/feature13.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -463,8 +463,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Производительность',
           image: 'assets/images/features/feature14.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -494,8 +494,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Кластер, надежность и масштабирование',
           image: 'assets/images/features/feature15.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -522,8 +522,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Масштабирование 2.0',
           image: 'assets/images/features/feature16.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -547,8 +547,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Геораспределенные системы и глобальная балансировка',
           image: 'assets/images/features/feature17.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -578,8 +578,8 @@ export class FeaturesComponent implements OnInit {
           name: 'REST API',
           image: 'assets/images/features/feature18.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -615,8 +615,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Безопасность Веб-приложений',
           image: 'assets/images/features/feature19.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -643,8 +643,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Безопасность данных',
           image: 'assets/images/features/feature20.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
@@ -810,8 +810,8 @@ export class FeaturesComponent implements OnInit {
           name: 'Приложения ',
           image: 'assets/images/features/feature29.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [

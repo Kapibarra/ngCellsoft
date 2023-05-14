@@ -50,13 +50,13 @@
         & a {
           color: #fff;
           font-family: "Inter";
-          font-size: 18px;
+          font-size: 22px;
           font-weight: 600;
           transition: all 0.2s ease-in-out;
           &:hover {
             text-decoration: none;
             transition: all 0.2s ease-in-out;
-            color: #eb8205;
+            color: #ffe1bc;
           }
         }
       }
@@ -67,7 +67,7 @@
         margin-top: 10px;
         color: #fff;
         font-family: "Inter";
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 300;
         text-decoration: none;
       }
@@ -115,6 +115,7 @@
 .header__phone--number {
   color: #fff;
   text-decoration: none;
+  font-size: 24px;
 }
 
 .header__phone--text {
