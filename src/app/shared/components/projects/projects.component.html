@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<div class="projects__wrapper">
+  <div class="projects__title">Наши Услуги</div>
+  <div class="projects">
+    <div class="projects__item" *ngFor="let service of projects">
+      <img src="{{ service.img }}" class="projects__item-image" />
+      <div class="projects__item-title">
+        {{ service.title }}
+        <!-- <img src="assets/icons/arrow-icon.png" /> -->
+      </div>
+      <div
+        class="projects__item-description"
+        *ngFor="let project of service.description"
+      >
+        {{ project.project }}
+      </div>
+    </div>
+  </div>
+</div>
