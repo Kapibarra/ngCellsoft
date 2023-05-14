@@ -91,14 +91,14 @@
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 60px;
   gap: 20px;
   & .support__item {
     width: 100%;
-    max-width: 1180px;
+    max-width: 580px;
     box-sizing: border-box;
     padding: 25px 35px;
     margin-bottom: 40px;

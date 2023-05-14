@@ -7,8 +7,11 @@
         {{ service.title }}
         <!-- <img src="assets/icons/arrow-icon.png" /> -->
       </div>
-      <div class="services__item-description">
-        {{ service.description }}
+      <div
+        class="services__item-description"
+        *ngFor="let project of service.description"
+      >
+        {{ project.project }}
       </div>
     </div>
   </div>
