@@ -2,10 +2,12 @@
   margin: 0 auto;
   width: 100%;
   max-width: 990px;
-  box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 120px;
+
   & .features {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
     & .features__item {
       width: 100%;
       max-width: 316px;
