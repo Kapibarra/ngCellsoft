@@ -26,6 +26,7 @@ export class PopUpComponent implements OnInit {
   inn: any;
   city: any;
   phone: any;
+  policyAgreement: any;
   isActive: boolean = false;
   successMessage: string | undefined;
   errorMessage: string | undefined;
@@ -45,6 +46,12 @@ export class PopUpComponent implements OnInit {
         [Validators.required, Validators.email, this.customEmailValidator],
       ],
       phone: ['', [Validators.required]],
+      city: ['', Validators.required],
+      inn: [
+        '',
+        [Validators.required, Validators.pattern('^[0-9]{10}$|^[0-9]{12}$')],
+      ],
+      policyAgreement: ['', Validators.requiredTrue],
     });
   }
 

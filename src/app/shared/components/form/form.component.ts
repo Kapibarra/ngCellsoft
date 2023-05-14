@@ -25,6 +25,7 @@ export class FormComponent implements OnInit {
   phone: any;
   inn: any;
   city: any;
+  policyAgreement: any;
   message: any;
   service: any;
   successMessage: string | undefined;
@@ -46,6 +47,7 @@ export class FormComponent implements OnInit {
       city: ['', Validators.required],
       message: [''],
       service: [''],
+      policyAgreement: ['', Validators.requiredTrue],
     });
   }
 
