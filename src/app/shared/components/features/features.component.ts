@@ -3,6 +3,7 @@ interface Features {
   id: number;
   title: string;
   icon: string;
+  open?: boolean;
   description: string;
   keys?: {
     name: string;
@@ -31,6 +32,7 @@ export class FeaturesComponent implements OnInit {
       id: 1,
       title: 'Функциональные возможности',
       icon: 'assets/icons/feature0.png',
+      open: true,
       description:
         'Контроллер приложений БИТС.БАЛАНС предоставляет функции и инструменты для безопасной, надежной и масштабируемой доставки приложений. Интуитивно понятный интерфейс позволяет выполнить настройку быстро и эффективно даже начинающему специалисту.',
       keys: [
