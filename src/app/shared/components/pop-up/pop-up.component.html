@@ -92,6 +92,37 @@
           </div>
         </div>
       </div>
+      <div class="contact-form-item">
+        <div class="contact-form-label__group">
+          <label for="city">Город:</label>
+          <input type="text" id="city" formControlName="city" />
+        </div>
+      </div>
+      <div class="contact-form-item">
+        <div class="contact-form-label__group">
+          <label for="inn">ИНН:</label>
+          <input type="text" id="inn" formControlName="inn" required />
+        </div>
+
+        <div
+          *ngIf="
+            contactForm.get('inn')?.invalid && contactForm.get('inn')?.touched
+          "
+        >
+          <div
+            *ngIf="contactForm.get('inn')?.hasError('required')"
+            class="error"
+          >
+            ИНН обязателен.
+          </div>
+          <div
+            *ngIf="contactForm.get('inn')?.hasError('pattern')"
+            class="error"
+          >
+            Не верный формат ИНН.
+          </div>
+        </div>
+      </div>
       <button
         class="close__button"
         type="submit"
@@ -99,6 +130,17 @@
       >
         Отправить
       </button>
+      <div class="checkbox-wrapper">
+        <label class="checkbox-label">
+          <input type="checkbox" formControlName="policyAgreement" checked />
+          Я согласен с <a href="#">политикой конфиденциальности</a>
+        </label>
+      </div>
+
+      <div *ngIf="successMessage" class="success">Сообщение отправлено!</div>
+      <div *ngIf="errorMessage" class="error">
+        Ошибка при отправке сообщения: {{ errorMessage }}
+      </div>
     </form>
 
     <!-- Форма здесь -->
