@@ -31,6 +31,7 @@ import { ContactspageComponent } from './pages/contactspage/contactspage.compone
 import { BuypageComponent } from './pages/buypage/buypage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     ContactspageComponent,
     BuypageComponent,
     PageNotFoundComponent,
+    AboutpageComponent,
   ],
   imports: [
     BrowserModule,

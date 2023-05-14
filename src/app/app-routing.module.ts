@@ -6,6 +6,7 @@ import { SupportpageComponent } from './pages/supportpage/supportpage.component'
 import { ContactspageComponent } from './pages/contactspage/contactspage.component';
 import { BuypageComponent } from './pages/buypage/buypage.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
 
 export const routes: Routes = [
   {
@@ -15,6 +16,10 @@ export const routes: Routes = [
   {
     path: 'partners',
     component: PartnerspageComponent,
+  },
+  {
+    path: 'about',
+    component: AboutpageComponent,
   },
   {
     path: 'support',

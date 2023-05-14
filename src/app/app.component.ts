@@ -31,6 +31,7 @@ export class AppComponent {
       '/',
       '/support',
       '/buy',
+      '/about',
       '/contacts',
     ];
     this.router.events.subscribe((event) => {
