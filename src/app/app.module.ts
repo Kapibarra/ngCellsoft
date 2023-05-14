@@ -30,6 +30,7 @@ import { DialogDirective } from './shared/directives/dialog.directive';
 import { ContactspageComponent } from './pages/contactspage/contactspage.component';
 import { BuypageComponent } from './pages/buypage/buypage.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { HttpClientModule } from '@angular/common/http';
     DialogDirective,
     ContactspageComponent,
     BuypageComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

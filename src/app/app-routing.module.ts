@@ -5,6 +5,7 @@ import { PartnerspageComponent } from './pages/partnerspage/partnerspage.compone
 import { SupportpageComponent } from './pages/supportpage/supportpage.component';
 import { ContactspageComponent } from './pages/contactspage/contactspage.component';
 import { BuypageComponent } from './pages/buypage/buypage.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
   {
@@ -26,6 +27,10 @@ export const routes: Routes = [
   {
     path: 'buy',
     component: BuypageComponent,
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
   },
 ];
 
