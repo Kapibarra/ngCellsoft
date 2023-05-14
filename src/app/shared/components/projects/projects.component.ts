@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 interface Projects {
   id: number;
   title: string;
-  img: string;
+  img?: string;
   description?: {
     project: string;
   }[];
@@ -17,7 +17,7 @@ export class ProjectsComponent implements OnInit {
     {
       id: 1,
       title: 'Проектирование',
-      img: 'assets/images/service01.png',
+      // img: 'assets/images/project01.png',
       description: [
         {
           project: 'Полный комплект документации (РД, ЭД)',
@@ -36,7 +36,7 @@ export class ProjectsComponent implements OnInit {
     {
       id: 2,
       title: 'Миграция имеющихся конфигураций',
-      img: 'assets/images/service02.png',
+      // img: 'assets/images/project02.png',
       description: [
         {
           project: 'Radware Alteon',
@@ -52,22 +52,22 @@ export class ProjectsComponent implements OnInit {
     {
       id: 3,
       title: 'Пуско-наладочные работы',
-      img: 'assets/images/service03.png',
+      // img: 'assets/images/project03.png',
     },
     {
       id: 4,
       title: 'Функциональные и нагрузочные испытания',
-      img: 'assets/images/service03.png',
+      // img: 'assets/images/project04.png',
     },
     {
       id: 5,
       title: 'Обучение',
-      img: 'assets/images/service03.png',
+      // img: 'assets/images/project05.png',
     },
     {
       id: 6,
       title: 'Сервисная поддержка согласно SLA',
-      img: 'assets/images/service03.png',
+      // img: 'assets/images/project06.png',
     },
   ];
   constructor() {}
