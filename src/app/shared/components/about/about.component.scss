@@ -122,14 +122,15 @@
         height: 312px;
 
         background: linear-gradient(
-          90deg,
-          #44ff9a -0.55%,
-          #44b0ff 22.86%,
-          #8b44ff 48.36%,
-          #ff6644 73.33%,
-          #ebff70 99.34%
+          180deg,
+          #e8fcff 0%,
+          #fffee2 33.33%,
+          #0072c6 33.33%,
+          #0072c6 66.66%,
+          #d52b1e 66.66%,
+          #d52b1e 100%
         );
-        filter: blur(35px);
+        filter: blur(25px);
         @media (max-width: 428px) {
           width: 300px;
         }
