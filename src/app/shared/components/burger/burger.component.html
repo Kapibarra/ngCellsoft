@@ -12,12 +12,32 @@
     </div>
 
     <ul class="burger__nav">
-      <li *ngFor="let route of currentRoutes">
-        {{ route.data!["navLabel"] }}
+      <li>
+        <a routerLink="/" class="header__navigation-link">Главная</a>
+      </li>
+      <li>
+        <a (click)="onClickScroll('about')" class="header__navigation-link"
+          >О нас</a
+        >
+      </li>
+
+      <li>
+        <a routerLink="/support" class="header__navigation-link"
+          >Техподдержка</a
+        >
+      </li>
+      <li>
+        <a routerLink="/partners" class="header__navigation-link">Партнерам</a>
+      </li>
+      <li>
+        <a routerLink="/buy" class="header__navigation-link">Как купить</a>
+      </li>
+      <li>
+        <a routerLink="/contacts" class="header__navigation-link">Контакты</a>
       </li>
     </ul>
     <div class="burger__copyright">
-      © <a href="https://novikovstudio.ru">NovikovStudio</a>
+      Created by © <a href="https://novikovstudio.ru">NovikovStudio</a>
     </div>
   </div>
 </div>

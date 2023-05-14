@@ -29,6 +29,7 @@
 .header {
   width: 100%;
   max-width: 1440px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding: 35px 0px;
   display: flex;

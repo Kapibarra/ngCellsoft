@@ -6,6 +6,7 @@
     </div>
     <div class="accordion__module">
       <app-features-item *ngFor="let item of features" title="{{ item.title }}">
+        <div class="feature__description">{{ item.description }}</div>
         <div
           class="features__item"
           *ngFor="let itemFeatures of item.keys"
@@ -29,7 +30,10 @@
             <div class="features__dialog-title">
               {{ itemFeatures.name }}
             </div>
-            <img class="features__dialog-image" [src]="itemFeatures.image" />
+            <img
+              class="features__dialog-image"
+              [src]="itemFeatures.dialogImage"
+            />
             <div class="features__dialog-description">
               {{ itemFeatures.dialogDescription }}
             </div>

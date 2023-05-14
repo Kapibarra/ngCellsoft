@@ -3,10 +3,12 @@ interface Features {
   id: number;
   title: string;
   icon: string;
+  description: string;
   keys?: {
     name: string;
     image: string;
     activeDialog?: boolean;
+    dialogImage?: string;
     dialogTitle: string;
     dialogDescription: string;
     dialogContent?: {
@@ -29,10 +31,13 @@ export class FeaturesComponent implements OnInit {
       id: 1,
       title: 'Функциональные возможности',
       icon: 'assets/icons/feature0.png',
+      description:
+        'Контроллер приложений БИТС.БАЛАНС предоставляет функции и инструменты для безопасной, надежной и масштабируемой доставки приложений. Интуитивно понятный интерфейс позволяет выполнить настройку быстро и эффективно даже начинающему специалисту.',
       keys: [
         {
           name: 'Режимы балансировки',
           image: 'assets/images/features/feature01.png',
+          dialogImage: 'assets/images/features/pics/01.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description',
@@ -95,6 +100,7 @@ export class FeaturesComponent implements OnInit {
           name: 'Сервисные мониторы',
           image: 'assets/images/features/feature02.png',
           activeDialog: false,
+          dialogImage: 'assets/images/features/pics/02.png',
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
           dialogContent: [
@@ -131,6 +137,7 @@ export class FeaturesComponent implements OnInit {
         {
           name: 'Контроль и модификация HTTP',
           image: 'assets/images/features/feature03.png',
+          dialogImage: 'assets/images/features/pics/03.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -168,6 +175,7 @@ export class FeaturesComponent implements OnInit {
         {
           name: 'Компрессия и кеширование',
           image: 'assets/images/features/feature04.png',
+          dialogImage: 'assets/images/features/pics/04.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -193,6 +201,7 @@ export class FeaturesComponent implements OnInit {
         {
           name: 'Аудит трафика',
           image: 'assets/images/features/feature05.png',
+          dialogImage: 'assets/images/features/pics/05.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -224,6 +233,7 @@ export class FeaturesComponent implements OnInit {
         {
           name: 'Централизованный мониторинг',
           image: 'assets/images/features/feature06.png',
+          dialogImage: 'assets/images/features/pics/06.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -258,10 +268,13 @@ export class FeaturesComponent implements OnInit {
       id: 2,
       title: 'Режимы работы',
       icon: 'assets/icons/featuresicon01.png',
+      description:
+        'БИТС.БАЛАНС поддерживает необходимые режимы подключений и маршрутизации трафика от клиентов к серверам приложений.',
       keys: [
         {
           name: 'Непосредственная маршрутизация',
           image: 'assets/images/features/feature07.png',
+          dialogImage: 'assets/images/features/pics/07.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description',
@@ -287,6 +300,7 @@ export class FeaturesComponent implements OnInit {
         {
           name: 'Проксирование',
           image: 'assets/images/features/feature08.png',
+          dialogImage: 'assets/images/features/pics/08.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -312,6 +326,7 @@ export class FeaturesComponent implements OnInit {
         {
           name: 'Мультиплексирование',
           image: 'assets/images/features/feature09.png',
+          dialogImage: 'assets/images/features/pics/09.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -334,6 +349,7 @@ export class FeaturesComponent implements OnInit {
         {
           name: 'Раскрытие SSL',
           image: 'assets/images/features/feature10.png',
+          dialogImage: 'assets/images/features/pics/10.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
@@ -409,6 +425,8 @@ export class FeaturesComponent implements OnInit {
       id: 3,
       title: 'Производительность и масштабирование',
       icon: 'assets/icons/featuresicon01.png',
+      description:
+        'БИТС.БАЛАНС предоставляет возможности масштабирования как в масштабах ЦОД, так и на уровне геораспределенных ДЦ. Функционал глобальной балансировки обеспечивает согласованную доступность сервисов (и их оперативное автоматическое восстановление) при изменяющейся IP-адресации.',
       keys: [
         {
           name: 'Сохранение состояний',
@@ -590,9 +608,11 @@ export class FeaturesComponent implements OnInit {
       id: 4,
       title: 'Безопасность',
       icon: 'assets/icons/featuresicon01.png',
+      description:
+        'Клиенты подключаются не к конечным приложениям, а к контроллерам доставки приложений, в результате обеспечивается высокий уровень безопасности. При создании сессий выполняются необходимые проверки безопасности с применением гибких настраиваемых алгоритмов и правил. Обеспечивается эффективное использование каналов связи и аппаратных мощностей оборудования для полезных нагрузок.',
       keys: [
         {
-          name: 'Режимы балансировки',
+          name: 'Безопасность Веб-приложений',
           image: 'assets/images/features/feature19.png',
           activeDialog: false,
           dialogTitle: 'test',
@@ -601,59 +621,26 @@ export class FeaturesComponent implements OnInit {
             {
               properties: [
                 {
-                  name: 'Round Robin',
+                  name: 'Межсетевой экран WAF',
                 },
                 {
-                  name: 'Least Connections',
+                  name: 'Единый портал подключений',
                 },
                 {
-                  name: 'Source IP / Hash',
+                  name: 'Поддержка SSO и 2FA (TOTP, MOTP, HOTP)',
                 },
                 {
-                  name: 'SSL session ID',
+                  name: 'Аутентификация mTLS и Kerberos',
                 },
                 {
-                  name: 'Cookie и HTTP headers',
-                },
-                {
-                  name: 'Persistence',
-                },
-                {
-                  name: 'Время ответа сервера',
-                },
-                {
-                  name: 'ACL',
-                },
-                {
-                  name: 'Пользовательские логические конструкции',
-                },
-                {
-                  name: 'Резервные бэкенды и группы доступности',
-                },
-                {
-                  name: '«Веса» и приоритеты серверов',
-                },
-                {
-                  name: 'Изменение портов балансируемого сервиса',
-                },
-                {
-                  name: 'Группировка сетевых портов и сервисов',
-                },
-                {
-                  name: 'Pooling сессий бэкенда',
-                },
-                {
-                  name: 'Ограничение сессий для серверов',
-                },
-                {
-                  name: 'Поддержка сегментов маршрутизации',
+                  name: 'Изоляция на уровне сервисов и приложений',
                 },
               ],
             },
           ],
         },
         {
-          name: 'Сервисные мониторы',
+          name: 'Безопасность данных',
           image: 'assets/images/features/feature20.png',
           activeDialog: false,
           dialogTitle: 'test',
@@ -662,152 +649,44 @@ export class FeaturesComponent implements OnInit {
             {
               properties: [
                 {
-                  name: 'Контроль физических портов адаптера',
+                  name: 'Обеспечение защиты сессий',
                 },
                 {
-                  name: 'Протоколы health check (TCP, UDP, ICMP, ARP)',
+                  name: 'Безопасные протоколы и cipher',
                 },
                 {
-                  name: 'Сервисы (DNS, LDAP/S, HTTP/S, FTP, IMAP, POP3, SIP, SMTP, SNMP, Kerberos, SSL Hello)',
+                  name: 'SSL/TLS мост',
                 },
                 {
-                  name: 'Специализированные HTTP GET запросы',
+                  name: 'Соответствие стандартам PCI-DSS',
                 },
                 {
-                  name: 'Пользовательские варианты проверок и поддержка автоматизации / скриптов',
-                },
-                {
-                  name: 'Логические комбинации перечисленных вариантов',
-                },
-                {
-                  name: 'Настраиваемое количество положительных и отрицательных проб для фиксации доступности',
-                },
-                {
-                  name: 'Гибкая настройка таймаутов и keepalive',
+                  name: 'Виртуализация инстансов',
                 },
               ],
             },
           ],
         },
         {
-          name: 'Контроль и модификация HTTP',
+          name: 'Защита от DDoS',
           image: 'assets/images/features/feature21.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
           dialogContent: [
             {
               properties: [
                 {
-                  name: 'Content based switching',
+                  name: 'Гибкие правила лимитов сессий',
                 },
                 {
-                  name: 'HTTP redirect',
+                  name: 'Поддержка ACL',
                 },
                 {
-                  name: 'HTTP rewrite запросов',
+                  name: '"Отпечатки" клиентов',
                 },
                 {
-                  name: 'HTTP rewrite ответов',
-                },
-                {
-                  name: 'Модификация headers',
-                },
-                {
-                  name: 'HTTP-мониторы контроль доступности через GET-запросы',
-                },
-                {
-                  name: 'Мультипликация',
-                },
-                {
-                  name: 'Возможность отправки PUT/POST-запросов',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          name: 'Компрессия и кеширование',
-          image: 'assets/images/features/feature22.png',
-          activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
-          dialogContent: [
-            {
-              properties: [
-                {
-                  name: 'Сокращение нагрузки серверов приложений',
-                },
-                {
-                  name: 'Оптимизация трафика каналов связи',
-                },
-                {
-                  name: 'Настройка гибких политик и правил',
-                },
-                {
-                  name: 'Персонализация',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          name: 'Аудит трафика',
-          image: 'assets/images/features/feature23.png',
-          activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
-          dialogContent: [
-            {
-              properties: [
-                {
-                  name: 'Запись метаданных сессий (время, IP источника и назначения, порты, заголовки и т.п.)',
-                },
-                {
-                  name: 'Запись содержимого запросов и ответов HTTP (GET/PUT/POST)',
-                },
-                {
-                  name: 'Создание и настройка триггеров записи',
-                },
-                {
-                  name: 'Mirroring',
-                },
-                {
-                  name: 'Отправка на внешний сервер хранения',
-                },
-                {
-                  name: 'Интеграция с ELK',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          name: 'Централизованный мониторинг',
-          image: 'assets/images/features/feature24.png',
-          activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
-          dialogContent: [
-            {
-              properties: [
-                {
-                  name: 'Статистика по сессиям, очередям, трафику, заголовкам, серверам и не только',
-                },
-                {
-                  name: 'Статусы и состояния сервисов',
-                },
-                {
-                  name: 'Счётчики ошибок и времени доступности',
-                },
-                {
-                  name: 'Поддержка ZABBIX',
-                },
-                {
-                  name: 'Поддержка Prometheus',
-                },
-                {
-                  name: 'Интеграция с ELK',
+                  name: 'Блокирование Бот-подключений',
                 },
               ],
             },
@@ -819,41 +698,156 @@ export class FeaturesComponent implements OnInit {
       id: 5,
       title: 'Совместимость',
       icon: 'assets/icons/featuresicon01.png',
+      description: '',
       keys: [
         {
-          name: 'Регулярные тесты на совместимость оборудования и программного обеспечения позволяют БИТС.БАЛАНС стабильно работать с максимальным перечнем решений.',
+          name: 'Регулярные тесты',
           image: 'assets/images/features/feature25.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description',
+          dialogTitle: '',
+          dialogDescription: '',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Регулярные тесты на совместимость оборудования и программного обеспечения позволяют БИТС.БАЛАНС стабильно работать с максимальным перечнем решений.',
+                },
+              ],
+            },
+          ],
         },
         {
-          name: 'Постоянно расширяем перечень поддерживаемых систем, готовы адаптировать функционал для новых решений.',
+          name: 'Адаптация',
           image: 'assets/images/features/feature26.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Постоянно расширяем перечень поддерживаемых систем, готовы адаптировать функционал для новых решений. Пишите.',
+                },
+              ],
+            },
+          ],
         },
         {
-          name: 'Операционные системы: Astra Linux (Орел, Воронеж, Смоленск), Альт (Сервер и Сервер СП), РЕД ОС, Debian, SUSE SLES, RHEL, Microsoft Windows, MacOS',
+          name: 'Операционные системы',
           image: 'assets/images/features/feature27.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'Astra Linux (Орел, Воронеж, Смоленск)',
+                },
+                {
+                  name: 'Альт (Сервер и Сервер СП)',
+                },
+                {
+                  name: 'РЕД ОС',
+                },
+                {
+                  name: 'Debian',
+                },
+                {
+                  name: 'SUSE SLES',
+                },
+                {
+                  name: 'RHEL',
+                },
+                {
+                  name: 'Microsoft Windows',
+                },
+                {
+                  name: 'MacOS',
+                },
+              ],
+            },
+          ],
         },
         {
-          name: 'Платформы виртуализации: VMware vSphere, Citrix XenServer, Microsoft Hyper-V, БРЕСТ, Горизонт-ВС, oVirt, zVirt, Ред Виртуализация',
+          name: 'Платформы виртуализации',
           image: 'assets/images/features/feature28.png',
           activeDialog: false,
-          dialogTitle: 'test',
-          dialogDescription: 'test description 2',
+          dialogTitle: '',
+          dialogDescription: '',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'VMware vSphere',
+                },
+                {
+                  name: 'Citrix XenServer',
+                },
+                {
+                  name: 'Microsoft Hyper-V',
+                },
+                {
+                  name: 'БРЕСТ',
+                },
+                {
+                  name: 'Горизонт-ВС',
+                },
+                {
+                  name: 'oVirt',
+                },
+                {
+                  name: 'zVirt',
+                },
+                {
+                  name: 'Ред Виртуализация',
+                },
+              ],
+            },
+          ],
         },
         {
-          name: 'Приложения: PostgersPro, CommuniGate Pro, Microsoft Exchange, MS SQL Server, Citrix XenDesktop, VMware Horizon, FreeIPA, SambaDC, CUPS,, Mind, Trueconf',
+          name: 'Приложения ',
           image: 'assets/images/features/feature29.png',
           activeDialog: false,
           dialogTitle: 'test',
           dialogDescription: 'test description 2',
+          dialogContent: [
+            {
+              properties: [
+                {
+                  name: 'PostgersPro',
+                },
+                {
+                  name: 'CommuniGate Pro',
+                },
+                {
+                  name: 'Microsoft Exchange',
+                },
+                {
+                  name: 'MS SQL Server',
+                },
+                {
+                  name: 'Citrix XenDesktop',
+                },
+                {
+                  name: 'FreeIPA',
+                },
+                {
+                  name: 'SambaDC',
+                },
+                {
+                  name: 'CUPS',
+                },
+                {
+                  name: ' Mind',
+                },
+                {
+                  name: 'Trueconf',
+                },
+              ],
+            },
+          ],
         },
       ],
     },

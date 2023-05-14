@@ -35,4 +35,7 @@
   /* or 125% */
 
   color: #667085;
+  @media (max-width: 428px) {
+    justify-content: center;
+  }
 }
