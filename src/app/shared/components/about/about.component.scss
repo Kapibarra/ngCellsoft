@@ -2,10 +2,8 @@
   width: 100%;
   max-width: 1340px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
-  margin-top: 120px;
+
+  padding-top: 170px;
 
   & .about {
     display: flex;
@@ -13,7 +11,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
     & .about__content {
       width: 100%;
       max-width: 437px;
