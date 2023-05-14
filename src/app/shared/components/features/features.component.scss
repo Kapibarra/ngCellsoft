@@ -97,6 +97,7 @@
           justify-content: space-between;
           align-items: flex-start;
           margin-bottom: 50px;
+          align-content: flex-start;
           gap: 8px;
           & .div {
             content: "•";
@@ -111,6 +112,15 @@
             }
           }
         }
+        & .features__dialog-overlay {
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(#ffffff, 0.3);
+        }
         & .features__dialog-compound {
           background: radial-gradient(
               73.8% 124.59% at 82.03% 36.35%,
@@ -123,16 +133,8 @@
           box-sizing: border-box;
           padding: 40px;
         }
-        // & .features__dialog-overlay {
-        //   position: fixed;
-        //   z-index: 98;
-        //   top: 0;
-        //   left: 0;
-        //   width: 100vh;
-        //   height: 100vh;
-        //   background: rgba(#ffffff, 0.3);
-        // }
       }
+
       & .features__item-title {
         font-family: "Inter";
         font-style: normal;
