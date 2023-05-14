@@ -78,6 +78,7 @@ export class PopUpComponent implements OnInit {
       this.http.post('assets/handler.php', formData).subscribe(
         (response) => {
           console.log('Форма успешно отправлена!');
+          this.contactForm.reset();
           console.log(response);
           // здесь можно добавить логику для вывода сообщения об успешной отправке формы
           this.successMessage = 'Сообщение отправлено!';

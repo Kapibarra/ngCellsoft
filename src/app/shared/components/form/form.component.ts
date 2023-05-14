@@ -72,6 +72,7 @@ export class FormComponent implements OnInit {
         (response) => {
           console.log('Форма успешно отправлена!');
           console.log(response);
+          this.contactForm.reset();
           // здесь можно добавить логику для вывода сообщения об успешной отправке формы
           this.successMessage = 'Сообщение отправлено!';
         },
