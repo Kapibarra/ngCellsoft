@@ -33,7 +33,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
 import { NewsComponent } from './shared/components/news/news.component';
-
+import { AdminComponent } from './pages/admin/admin.component';
+import { LoginComponent } from './pages/login/login.component';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +67,8 @@ import { NewsComponent } from './shared/components/news/news.component';
     PageNotFoundComponent,
     AboutpageComponent,
     NewsComponent,
+    AdminComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,6 +77,8 @@ import { NewsComponent } from './shared/components/news/news.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    provideFirebaseApp(() => initializeApp()),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [DialogDirective],
   bootstrap: [AppComponent],

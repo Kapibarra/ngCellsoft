@@ -1,0 +1,29 @@
+<div class="login__wrapper">
+  <div class="login">
+    <div class="login__title">Вход для администратора</div>
+    <form #loginForm="ngForm" (ngSubmit)="onLogin()" class="login__form">
+      <label for="username">Логин:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        [(ngModel)]="username"
+        required
+      />
+
+      <label for="password">Пароль:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        [(ngModel)]="password"
+        required
+      />
+
+      <button type="submit" class="form__button">Войти</button>
+    </form>
+    <p *ngIf="errorMessage" class="form__error-message">
+      {{ errorMessage }}
+    </p>
+  </div>
+</div>

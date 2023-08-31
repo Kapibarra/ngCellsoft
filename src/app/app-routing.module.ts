@@ -7,6 +7,9 @@ import { ContactspageComponent } from './pages/contactspage/contactspage.compone
 import { BuypageComponent } from './pages/buypage/buypage.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
+import { LoginComponent } from './pages/login/login.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { AuthGuard } from './auth.guard';
 
 export const routes: Routes = [
   {
@@ -33,6 +36,9 @@ export const routes: Routes = [
     path: 'buy',
     component: BuypageComponent,
   },
+  { path: 'login', component: LoginComponent },
+  { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] }, // Примените AuthGuard к этому маршруту
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   {
     path: '**',
     component: PageNotFoundComponent,
