@@ -1,0 +1,26 @@
+ [
+    {
+        "news": [
+            {
+                "id": 1,
+                "title": "News 1",
+                "img": "assets/images/service01.png",
+                "text": "text news 1"
+              },
+              {
+                "id": 2,
+                "title": "News 2",
+                "img": "assets/images/service01.png",
+                "text": "text news 2"
+              },
+              {
+                "id": 3,
+                "title": "News 3",
+                "img": "assets/images/service01.png",
+                "text": "text news 3"
+              }
+        ]
+    }
+    
+  ]
+  

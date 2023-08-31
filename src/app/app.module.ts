@@ -32,6 +32,7 @@ import { BuypageComponent } from './pages/buypage/buypage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
+import { NewsComponent } from './shared/components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
     BuypageComponent,
     PageNotFoundComponent,
     AboutpageComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,7 +71,7 @@ import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [DialogDirective],
   bootstrap: [AppComponent],
