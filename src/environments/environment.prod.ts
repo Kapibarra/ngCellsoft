@@ -1,14 +1,16 @@
 export const environment = {
   production: true,
-  username: 'your_production_username',
-  password: 'your_production_password',
+  username: 'admincellsoft',
+  password: 'admin',
   firebaseConfig: {
     // конфигурация Firebase для продакшн
-    apiKey: 'YOUR_API_KEY',
-    authDomain: 'YOUR_AUTH_DOMAIN',
-    projectId: 'YOUR_PROJECT_ID',
-    storageBucket: 'YOUR_STORAGE_BUCKET',
-    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-    appId: 'YOUR_APP_ID',
+    apiKey: 'AIzaSyA1CsyhcUoHObX3_OQPJOyjVPR8OYiRYZU',
+    authDomain: 'cellsoft-2884a.firebaseapp.com',
+    databaseURL:
+      'https://cellsoft-2884a-default-rtdb.europe-west1.firebasedatabase.app',
+    projectId: 'cellsoft-2884a',
+    storageBucket: 'cellsoft-2884a.appspot.com',
+    messagingSenderId: '338304927497',
+    appId: '1:338304927497:web:66c642efafd72abc2d75d8',
   },
 };

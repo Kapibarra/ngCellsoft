@@ -15,10 +15,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   onLogin() {
-    if (
-      this.username === environment.username &&
-      this.password === environment.password
-    ) {
+    if (this.username === 'admin' && this.password === 'admin') {
       localStorage.setItem('isLoggedIn', 'true');
       this.router.navigate(['/admin']);
     } else {
