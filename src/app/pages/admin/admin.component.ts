@@ -96,6 +96,7 @@ export class AdminComponent implements OnInit {
         await this.newsService.addNews(newsData);
         // После успешного добавления можно очистить форму
         this.newsForm.reset();
+        this.getNews();
       } catch (error) {
         // Обработка ошибок при добавлении
         console.error('Ошибка при добавлении новости', error);

@@ -3,12 +3,12 @@
   <div class="news">
     <div class="news__item" *ngFor="let newsSingle of news">
       <a [routerLink]="['/news', newsSingle.id]">
-        <img src="{{ newsSingle.img }}" class="news__item-image" />
+        <img src="{{ newsSingle.image }}" class="news__item-image" />
         <div class="news__item-title">
           {{ newsSingle.title }}
           <!-- <img src="assets/icons/arrow-icon.png" /> -->
         </div>
-        <div>
+        <div class="news__item-description">
           {{ newsSingle.text }}
         </div>
       </a>

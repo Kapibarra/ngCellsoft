@@ -6,7 +6,7 @@ import { Subscription, switchMap } from 'rxjs';
 interface News {
   id: any;
   title: string;
-  img: string;
+  image: string;
   text: string;
 }
 
@@ -33,7 +33,7 @@ export class NewsItemComponent implements OnInit {
         switchMap((params: ParamMap) => {
           const id = params.get('id');
           return this.http.get<News>(
-            `https://cellsoft-2884a-default-rtdb.europe-west1.firebasedatabase.app/0/news/${id}.json`
+            `https://cellsoft-2884a-default-rtdb.europe-west1.firebasedatabase.app/news/${id}.json`
           );
         })
       )
@@ -44,7 +44,7 @@ export class NewsItemComponent implements OnInit {
   }
 
   goToHome() {
-    this.router.navigate(['/news']); // Используйте Router для навигации
+    this.router.navigate(['/']); // Используйте Router для навигации
     this.scrollIntoView('news');
   }
 
