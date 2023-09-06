@@ -41,6 +41,7 @@ import { NewsItemComponent } from './shared/components/news-item/news-item.compo
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment.prod';
+import { TruncatePipe } from './shared/pipe/truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { environment } from 'src/environments/environment.prod';
     AdminComponent,
     LoginComponent,
     NewsItemComponent,
+    TruncatePipe,
   ],
   imports: [
     BrowserModule,

@@ -13,11 +13,11 @@
           {{ newsSingle.image }}
         </div> -->
         <div class="news__item-title">
-          {{ newsSingle.title }}
+          {{ newsSingle.title | truncate : 120 }}
           <!-- <img src="assets/icons/arrow-icon.png" /> -->
         </div>
         <div>
-          {{ newsSingle.text }}
+          {{ newsSingle.text | truncate : 120 }}
         </div>
         <!-- <button class="green">Редактировать</button> -->
         <button class="red" (click)="deleteNews(newsSingle.id)">Удалить</button>

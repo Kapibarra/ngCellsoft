@@ -9,7 +9,7 @@
           <!-- <img src="assets/icons/arrow-icon.png" /> -->
         </div>
         <div class="news__item-description">
-          {{ newsSingle.text }}
+          {{ newsSingle.text | truncate : 120 }}
         </div>
       </a>
     </div>

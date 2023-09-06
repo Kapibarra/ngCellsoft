@@ -47,58 +47,41 @@ export class AdminComponent implements OnInit {
       console.log(response);
     });
   }
-  // onImageSelected(event: Event) {
-  //   const inputElement = event.target as HTMLInputElement;
-  //   if (inputElement.files && inputElement.files.length > 0) {
-  //     const selectedImage = inputElement.files[0];
-  //     this.newsForm.get('image')?.setValue(selectedImage);
-  //   }
-  // }
   handleUpload(event: Event) {
     if (event && event.target) {
       const inputElement = event.target as HTMLInputElement;
       const files = inputElement.files;
-
       if (files && files.length > 0) {
         const file = files[0];
         const reader = new FileReader();
-
         reader.onload = () => {
           const dataURL = reader.result as string;
           this.newsForm.get('image')?.setValue(dataURL);
         };
-
         reader.readAsDataURL(file);
       }
     }
   }
-
-  deleteNews(newsId: string) {
-    this.newsService
-      .deleteNews(newsId)
-      .then(() => {
-        const index = this.news.findIndex((news) => news.id === +newsId);
-        if (index !== -1) {
-          this.news.splice(index, 1);
-        }
-      })
-      .catch((error) => {
-        // Обработка ошибки при удалении
-        console.error('Ошибка при удалении новости', error);
-      });
+  async deleteNews(newsId: string) {
+    try {
+      await this.newsService.deleteNews(newsId);
+      const index = this.news.findIndex((news) => news.id === +newsId);
+      if (index !== -1) {
+        this.news.splice(index, 1);
+        this.getNews();
+      }
+    } catch (error) {
+      console.error('Ошибка при удалении новости', error);
+    }
   }
-
   async addNews() {
     if (this.newsForm.valid) {
       const newsData = this.newsForm.value;
-
       try {
         await this.newsService.addNews(newsData);
-        // После успешного добавления можно очистить форму
         this.newsForm.reset();
         this.getNews();
       } catch (error) {
-        // Обработка ошибок при добавлении
         console.error('Ошибка при добавлении новости', error);
       }
     }
