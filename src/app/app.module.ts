@@ -37,6 +37,7 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { LoginComponent } from './pages/login/login.component';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { NewsItemComponent } from './shared/components/news-item/news-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +70,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
     NewsComponent,
     AdminComponent,
     LoginComponent,
+    NewsItemComponent,
   ],
   imports: [
     BrowserModule,

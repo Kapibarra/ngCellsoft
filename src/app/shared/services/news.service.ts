@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {
   AngularFirestore,
   AngularFirestoreCollection,
+  DocumentData,
 } from '@angular/fire/compat/firestore';
 import { DocumentReference } from 'firebase/firestore';
 import { Observable } from 'rxjs';
@@ -21,7 +22,9 @@ export class NewsService {
   getNews(): Observable<any[]> {
     return this.firestore.collection('news').valueChanges();
   }
-
+  //   addNews(newsData: NewsData): Promise<DocumentReference<NewsData, DocumentData>> {
+  //     return this.firestore.collection<NewsData>('news').add(newsData);
+  //   }
   updateNews(newsId: string, newData: any): Promise<void> {
     return this.firestore
       .collection('news')

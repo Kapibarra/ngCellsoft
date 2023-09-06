@@ -10,6 +10,7 @@ import { AboutpageComponent } from './pages/aboutpage/aboutpage.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { AuthGuard } from './auth.guard';
+import { NewsItemComponent } from './shared/components/news-item/news-item.component';
 
 export const routes: Routes = [
   {
@@ -36,6 +37,7 @@ export const routes: Routes = [
     path: 'buy',
     component: BuypageComponent,
   },
+  { path: 'news/:id', component: NewsItemComponent },
   { path: 'login', component: LoginComponent },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] }, // Примените AuthGuard к этому маршруту
   { path: '', redirectTo: '/login', pathMatch: 'full' },

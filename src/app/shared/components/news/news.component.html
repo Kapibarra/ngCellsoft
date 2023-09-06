@@ -1,15 +1,17 @@
-<div class="news__wrapper">
+<div class="news__wrapper" id="news">
   <div class="news__title">Новости</div>
   <div class="news">
     <div class="news__item" *ngFor="let newsSingle of news">
-      <img src="{{ newsSingle.img }}" class="news__item-image" />
-      <div class="news__item-title">
-        {{ newsSingle.title }}
-        <!-- <img src="assets/icons/arrow-icon.png" /> -->
-      </div>
-      <div>
-        {{ newsSingle.text }}
-      </div>
+      <a [routerLink]="['/news', newsSingle.id]">
+        <img src="{{ newsSingle.img }}" class="news__item-image" />
+        <div class="news__item-title">
+          {{ newsSingle.title }}
+          <!-- <img src="assets/icons/arrow-icon.png" /> -->
+        </div>
+        <div>
+          {{ newsSingle.text }}
+        </div>
+      </a>
     </div>
   </div>
 </div>
