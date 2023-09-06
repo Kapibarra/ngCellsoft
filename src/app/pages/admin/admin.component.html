@@ -1,17 +1,45 @@
 <div class="news__wrapper">
   <div class="news__title">Новости</div>
   <div class="news">
-    <div class="news__item" *ngFor="let newsSingle of news">
-      <img src="{{ newsSingle.img }}" class="news__item-image" />
-      <div class="news__item-title">
-        {{ newsSingle.title }}
-        <!-- <img src="assets/icons/arrow-icon.png" /> -->
+    <ng-container *ngFor="let newsSingle of news">
+      <div *ngIf="newsSingle !== null" class="news__item">
+        <img src="{{ newsSingle.image }}" class="news__item-image" />
+        <!-- <div
+          class="news__item-image"
+          [style.backgroundImage]="
+            newsSingle.image ? 'url(' + newsSingle.image + ')' : ''
+          "
+        >
+          {{ newsSingle.image }}
+        </div> -->
+        <div class="news__item-title">
+          {{ newsSingle.title }}
+          <!-- <img src="assets/icons/arrow-icon.png" /> -->
+        </div>
+        <div>
+          {{ newsSingle.text }}
+        </div>
+        <!-- <button class="green">Редактировать</button> -->
+        <button class="red" (click)="deleteNews(newsSingle.id)">Удалить</button>
       </div>
-      <div>
-        {{ newsSingle.text }}
-      </div>
-      <button class="green">Редактировать</button>
-      <button class="red">Удалить</button>
+    </ng-container>
+    <div class="news__form">
+      <form [formGroup]="newsForm" (ngSubmit)="addNews()">
+        <div class="form-group">
+          <label for="image">Изображение:</label>
+          <input type="file" id="image" (change)="handleUpload($event)" />
+        </div>
+        <div class="form-group">
+          <label for="title">Заголовок:</label>
+          <input type="text" id="title" formControlName="title" />
+        </div>
+        <div class="form-group">
+          <label for="text">Текст:</label>
+          <textarea id="text" formControlName="text"></textarea>
+        </div>
+        <!-- Добавьте другие поля формы, если необходимо -->
+        <button type="submit" class="green">Добавить новость</button>
+      </form>
     </div>
   </div>
 </div>

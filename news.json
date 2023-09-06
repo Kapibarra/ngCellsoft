@@ -1,26 +1,26 @@
- [
+{
+  "news":[
     {
-        "news": [
-            {
-                "id": 1,
-                "title": "News 1",
-                "img": "assets/images/service01.png",
-                "text": "text news 1"
-              },
-              {
-                "id": 2,
-                "title": "News 2",
-                "img": "assets/images/service01.png",
-                "text": "text news 2"
-              },
-              {
-                "id": 3,
-                "title": "News 3",
-                "img": "assets/images/service01.png",
-                "text": "text news 3"
-              }
-        ]
+      "id": 0,
+      "title": "News 1",
+      "img": "assets/images/service01.png",
+      "text": "text news 1"
+    },
+    {
+      "id": 1,
+      "title": "News 2",
+      "img": "assets/images/service02.png",
+      "text": "text news 2"
+    },
+    {
+      "id": 2,
+      "title": "News 3",
+      "img": "assets/images/service03.png",
+      "text": "text news 3"
     }
-    
   ]
+}
+            
+
+
   

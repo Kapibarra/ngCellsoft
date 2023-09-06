@@ -38,6 +38,10 @@ import { LoginComponent } from './pages/login/login.component';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { NewsItemComponent } from './shared/components/news-item/news-item.component';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment.prod';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,6 +83,8 @@ import { NewsItemComponent } from './shared/components/news-item/news-item.compo
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
     provideFirebaseApp(() => initializeApp()),
     provideFirestore(() => getFirestore()),
   ],
