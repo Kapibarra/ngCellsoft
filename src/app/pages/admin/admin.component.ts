@@ -65,13 +65,10 @@ export class AdminComponent implements OnInit {
   async deleteNews(newsId: string) {
     try {
       await this.newsService.deleteNews(newsId);
-      const index = this.news.findIndex((news) => news.id === +newsId);
-      if (index !== -1) {
-        this.news.splice(index, 1);
-        this.getNews();
-      }
     } catch (error) {
       console.error('Ошибка при удалении новости', error);
+    } finally {
+      this.getNews();
     }
   }
   async addNews() {
@@ -80,9 +77,10 @@ export class AdminComponent implements OnInit {
       try {
         await this.newsService.addNews(newsData);
         this.newsForm.reset();
-        this.getNews();
       } catch (error) {
         console.error('Ошибка при добавлении новости', error);
+      } finally {
+        this.getNews();
       }
     }
   }
